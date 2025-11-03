@@ -69,11 +69,11 @@ To increase the number of customers and transactions, the data analysis team is 
     <th colspan="6">Seasonal Performance</th>
   </tr>
   <tr>
-    <td colspan="3">
-      img
+    <td align="center"; colspan="3">
+      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_by_seasons.jpg">
     </td>
-    <td colspan="3">
-      img
+    <td align="center"; colspan="3">
+      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_seasons.jpg">
     </td>
   </tr>
   <tr>
@@ -86,19 +86,19 @@ To increase the number of customers and transactions, the data analysis team is 
     <th colspan="6">Quality Performance</th>
   </tr>
   <tr>
-    <td colspan="2">
-      img
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_repeat_purchase_rate.jpg">
     </td>
-    <td colspan="2">
-      img
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_review_rating.jpg">
     </td>
-    <td colspan="2">
-      img
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_subscribers_percentage.jpg">
     </td>
   </tr>
   <tr>
     <td valign="top" colspan="6">
-    1.	The <b>Repeat Purchase Percentage</b> (or Returning Customer Percentage) is high at <b>89%</b>, indicating that <b>almost every customer</b> who has shopped at TrendOne is <b>likely to return</b>.<br>
+    1.	The <b>Repeat Purchase Rate</b> (or Returning Customer Percentage) is high at <b>89%</b>, indicating that <b>almost every customer</b> who has shopped at TrendOne is <b>likely to return</b>.<br>
     2.	The <b>Average Review Rating</b> is <b>3.75</b>, which can be considered <b>fairly good</b> or <b>average</b>.<br>
     3.	Only 27% of customers are subscribed to TrendOne’s loyalty program.
     </td>
