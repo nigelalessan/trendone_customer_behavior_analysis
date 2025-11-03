@@ -30,14 +30,14 @@ To increase the number of customers and transactions, the data analysis team is 
     <th colspan="6">Sales Performance</th>
   </tr>
   <tr>
-    <td colspan="2">
-      <img>
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_number_of_transaction.jpg">
     </td>
-    <td colspan="2">
-      <img>
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue.jpg">
     </td>
-    <td colspan="2">
-      <img>
+    <td align="center"; colspan="2">
+      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value.jpg">
     </td>
   </tr>
   <tr>
@@ -51,11 +51,11 @@ To increase the number of customers and transactions, the data analysis team is 
     <th colspan="6">Product Performance</th>
   </tr>
   <tr>
-    <td colspan="3">
-      img
+    <td align="center"; colspan="3">
+       <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_by_category.jpg">
     </td>
-    <td colspan="3">
-      img
+    <td align="center"; colspan="3">
+      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_category.jpg">
     </td>
 
   </tr>
