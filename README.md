@@ -1,4 +1,4 @@
-# TrendOne Co. Customer Behavior Analysis
+# :pushpin: TrendOne Co. Customer Behavior Analysis
 <h1 align="center">TrendOne Co.</h1>
 
 This project is a **simulated case study** based on a fictional e-commerce company, **TrendOne** is a new B2C e-commerce retailer offering casual fashion products in the US.. TrendOne's mission is to provide quality fashion products from multiple brands with a personalized and easy shopping experience, optimizing retention through product recommendations, a loyalty program, and relevant automated emails.
@@ -7,9 +7,8 @@ TrendOne achieved 3900 total transactions and generated revenue approximately $2
 To increase the number of customers and transactions, the data analysis team is tasked with performing an analysis aimed at boosting sales revenue and developing effective marketing strategies. TrendOne also wants to understand how effective its advertisements are in increasing sales. This analysis will be very useful for various cross-functional teams and will be used as a basis for decision-making. The main insights will be divided s follows:
 
 ## :star: Northstar Metrics
-
-*	Sales Performance: 
-  * Number of Transactions: The transaction volume 
+* Sales Performance: 
+  * Number of Transactions: The transaction volume
   * Average Order Value (AOV):  Average purchase amount each transaction
   * Sales Revenue: Total revenue generated
 * Product Performance
@@ -25,22 +24,20 @@ To increase the number of customers and transactions, the data analysis team is 
   *	Average Review Rating: Average product rating across all products
   *	%  Subscribers: The ratio of subscribers to non-subscribers
 
+<h1 align="center">Observation</h1>
 <table align="center">
-  <tr>
-    <th colspan="6" style="font-size: 28px;"> Observation</th>
-  </tr>
   <tr>
     <th colspan="6">Sales Performance</th>
   </tr>
   <tr>
     <td colspan="2">
-      img
+      <img>
     </td>
     <td colspan="2">
-      img
+      <img>
     </td>
     <td colspan="2">
-      img
+      <img>
     </td>
   </tr>
   <tr>
