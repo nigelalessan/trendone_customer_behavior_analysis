@@ -108,107 +108,109 @@ To increase the number of customers and transactions, the data analysis team is 
 <br><br>
 
 # :microscope: Analysis
-<table align="center">
+<table style="table-layout: fixed; width: 100%; align: center">
   <tr>
-    <th colspan="6">Analysis</th>
-  </tr>
-  <tr>
-    <td colspan="6">Sales Performance</td>
+    <th colspan="6">Sales Performance</th>
   </tr>
   <tr>
     <td align="center"; colspan="2">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_customers.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_customers.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_customers.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_customers.jpg">
     </td>
     <td align="center"; colspan="2">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_south.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_west.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_south.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_west.jpg">
     </td>
     <td align="center"; colspan="2">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_footwear_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_footwear.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_clothing_filter.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_clothing.jpg">     
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_footwear_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_footwear.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_clothing_filter.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_clothing.jpg">
+     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_filter_young_adult.jpg">
+     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_aov_young_adult.jpg">
     </td>
   </tr>
   <tr>
-    <td valign="top"; colspan="2">
-     •	The total number of transactions reached 3.9K, indicating strong customer engagement and platform usage. This suggests that marketing efforts and 
-     promotional campaigns have been effective. Increasing transaction volume will likely contribute to both revenue growth and an increase in active 
-     customers. The customer demographic is male-dominated, with around 2,652 male customers. Regionally, the South and West areas contribute the largest 
-     customer segments, with 1,271 and 1,018 customers, respectively, highlighting these regions as key markets for TrendOne’s sales performance.
+    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
+     •	The total number of transactions reached 3.9K, indicating strong customer engagement and platform usage. This suggests that marketing efforts and promotional campaigns have been effective. Increasing transaction volume will likely contribute to both revenue growth and an increase in active customers. The customer demographic is male-dominated, with around 2,652 male customers. Regionally, the South and West areas contribute the largest customer segments, with 1,271 and 1,018 customers, respectively, highlighting these regions as key markets for TrendOne’s sales performance.
     </td>
-    <td valign="top"; colspan="2">
-     •	The company generated $233K in revenue from these 3.9K transactions, resulting in an Average Order Value (AOV) of around $60. The highest revenue 
-     came from the clothing and accessories categories, both of which play a key role in the company’s overall income. It is recommended that the company 
-     focus on these two popular categories while also improving sales in footwear and outerwear, which only contributed 15% and 8% of total transactions, 
-     respectively. The data also shows that customers living in the South and West regions made more purchases than other regions, with South contributing 
-     $75K and West $62K.
+    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
+     •	The company generated $233K in revenue from these 3.9K transactions, resulting in an Average Order Value (AOV) of around $60. The highest revenue came from the clothing and accessories categories, both of which play a key role in the company’s overall income. It is recommended that the company focus on these two popular categories while also improving sales in footwear and outerwear, which only contributed 15% and 8% of total transactions, respectively. The data also shows that customers living in the South and West regions made more purchases than other regions, with South contributing $75K and West $62K.
     </td>
-    <td valign="top"; colspan="2">
-     •	The Average Order Value stands at $60, with footwear leading slightly at $60.26, followed by clothing at $60.03. This indicates that high-value 
-     transactions are primarily driven by these two categories. The high AOV might be influenced by intrinsic factors (such as higher base prices for 
-     footwear and clothing) or behavioral factors (such as customers’ willingness to spend more for quality, brand perception, or exclusivity).
+    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
+     •	The Average Order Value stands at $60, with footwear leading slightly at $60.26, followed by clothing at $60.03. This indicates that high-value transactions are primarily driven by these two categories. The high AOV might be influenced by intrinsic factors (such as higher base prices for footwear and clothing) or behavioral factors (such as customers’ willingness to spend more for quality, brand perception, or exclusivity). The young adult age group tends to have a higher average order value compared to other age groups, at $60.45.
     </td>
   </tr>
   <tr>
-    <td colspan="6">Product Performance</td>
+    <th colspan="6">Product Performance</th>
   </tr>
   <tr>
-    <td colspan="3">
-     <img>
+    <td align="center"; colspan="3">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_clothing.jpg">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_accessories.jpg">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_contributors.jpg">
     </td>
-    <td colspan="3">
-     <img>
+    <td align="center"; colspan="3">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_clothing.jpg">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_accessories.jpg">
+     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_category.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
+     •	The clothing category generated the highest revenue at $104K (45%), followed by accessories with $74K (32%). This highlights the dominance of these two categories, suggesting that the company should continue to focus on them while seeking to improve sales in footwear and outerwear.
+    </td>
+    <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
+     • Similarly, the transaction volume aligns with revenue trends clothing accounts for 44% of total sales with 1,737 transactions, accessories for 30% with 1,240, footwear for 15% with 599, and outerwear for only 7% with 324. The company should consider implementing strategies to boost sales in the lower-performing categories.
+    </td>
+  </tr>
+    <tr>
+    <th colspan="6">Seasonal Performance</th>
+  </tr>
+  <tr>
+    <td align="center"; colspan="3">
+     <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_seasons.jpg">
+    </td>
+    <td align="center"; colspan="3">
+     <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_seasons.jpg">
     </td>
   </tr>
   <tr>
     <td valign="top"; colspan="3">
-      •	The clothing category generated the highest revenue at $104K (45%), followed by accessories with $74K (32%). This highlights the dominance of 
-     these two categories, suggesting that the company should continue to focus on them while seeking to improve sales in footwear and outerwear.
+     •	The highest revenue was recorded in the fall season at $60K, although revenue across all four seasons remained relatively close. This indicates stable and consistent customer demand, meaning the business is not heavily dependent on seasonal changes. There are no extreme highs or lows, suggesting financial stability and reduced operational risks during potential low seasons.
     </td>
     <td valign="top"; colspan="3">
-     •	Similarly, transaction volume aligns with revenue trends — clothing accounts for 44% of all sales, accessories for 30%, footwear for 15%, and 
-     outerwear for only 7%. The company should consider strategies to boost sales in the lower-performing categories.
+     •	The total number of sales also shows similar stability, with spring slightly leading at 999 transactions, reinforcing the idea that sales performance is balanced throughout the year.
     </td>
   </tr>
     <tr>
-    <td colspan="6">Seasonal Performance</td>
+    <th colspan="6">Quality Performance</th>
   </tr>
   <tr>
-    <td colspan="6">
-    <img>
-    <img>
-    <img>
-    <img>
-    <img>
+    <td align="center"; colspan="2">
+      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_repeat_purchase_rate.jpg">
+    </td>
+    <td align="center"; colspan="2">
+      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_review_rating.jpg">
+    </td>
+    <td align="center"; colspan="2">
+      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_subscribers_percentage.jpg">
     </td>
   </tr>
   <tr>
-    <td valign="top"; colspan="2">a</td>
-    <td valign="top"; colspan="2">b</td>
-    <td valign="top"; colspan="2">c</td>
-  </tr>
-    <tr>
-    <td colspan="6">Quality Performance</td>
-  </tr>
-  <tr>
-    <td colspan="6">
-    <img>
-    <img>
-    <img>
-    <img>
-    <img>
+    <td valign="top"; colspan="2">
+     •	The Repeat Purchase Rate stands at an impressive 89%, indicating a strong customer retention rate. Many customers make repeat purchases after shopping multiple times at TrendOne, showing high levels of loyalty and satisfaction. This could be driven by platform convenience, attractive discounts, excellent after-sales service, or effective marketing strategies.
     </td>
-  </tr>
-  <tr>
-    <td valign="top"; colspan="2">a</td>
-    <td valign="top"; colspan="2">b</td>
-    <td valign="top"; colspan="2">c</td>
+    <td valign="top"; colspan="2">
+     •	The Average Review Rating is 3.75, which can be considered fairly good, though not outstanding. Despite the average rating, the high repeat purchase rate suggests either high customer loyalty or a strong product need, meaning further analysis is needed to understand why satisfaction scores remain moderate. There is still room for improvement.
+    </td>
+    <td valign="top"; colspan="2">
+     •	27% of total customers are subscribed to TrendOne’s loyalty program. Increasing the number of subscribers could further strengthen customer retention and boost repeat purchases, as loyal members are more likely to stay engaged with the platform. It was also found that no female customers subscribed to the loyalty program. The entire 27% of total subscribers came exclusively from male customers.
+    </td>
   </tr>
 </table>
 
