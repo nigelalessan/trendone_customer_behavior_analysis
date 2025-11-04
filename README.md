@@ -1,4 +1,22 @@
 # :pushpin: TrendOne Co. Customer Behavior Analysis
+<br>
+
+---
+
+## 📂 Repository Structure
+```
+trendone_customer_behavior_analysis/
+│
+├── datasets/                           # Raw datasets and cleaned datasets used for this project
+│
+├── docs/                               # include img folder and .pbix file for the dashboard
+│    ├── img/                           # img assets for this analysis project
+│
+└── scripts/                            # All codes presented in the course including .sql for business case EDA and .ipynb for Python data cleaning
+```
+
+---
+
 <h1 align="center">TrendOne Co.</h1>
 
 This project is a **simulated case study** based on a fictional e-commerce company, **TrendOne** is a new B2C e-commerce retailer offering casual fashion products in the US.. TrendOne's mission is to provide quality fashion products from multiple brands with a personalized and easy shopping experience, optimizing retention through product recommendations, a loyalty program, and relevant automated emails.
@@ -105,7 +123,7 @@ To increase the number of customers and transactions, the data analysis team is 
   </tr>
 </table>
 
-<br><br>
+<br>
 
 # :microscope: Analysis
 <table style="table-layout: fixed; width: 100%; align: center">
@@ -212,5 +230,50 @@ To increase the number of customers and transactions, the data analysis team is 
      •	27% of total customers are subscribed to TrendOne’s loyalty program. Increasing the number of subscribers could further strengthen customer retention and boost repeat purchases, as loyal members are more likely to stay engaged with the platform. It was also found that no female customers subscribed to the loyalty program. The entire 27% of total subscribers came exclusively from male customers.
     </td>
   </tr>
+</table>
+
+<br>
+
+# :rocket: Recommendation
+<table align="center">
+<tr>
+  <th>Sales Performance</th>
+</tr>
+<tr>
+  <td>
+   •	Consider conducting time-based and category-based analysis to identify high-potential product categories and cross-selling opportunities. You can also implement promotions such as “Buy 2, Get a Discount” for best-selling products while improving visibility for underperforming ones. <br>
+   •	Increasing the number of customers will naturally boost transactions and overall revenue. Since customer engagement in the Midwest and Northeast regions is relatively low, the marketing team should launch targeted campaigns in these areas to attract new customers. <br>
+   •	At the same time, localized promotions in the South and West regions where the customer base is already strong, can help strengthen loyalty and further drive sales growth. Given the higher average order value among young adults, the company could leverage this segment for targeted marketing campaigns or introduce subscription-based offers, as this group shows greater spending potential compared to other age groups.
+  </td>
+</tr>
+<tr>
+  <th>Product Performance</th>
+</tr>
+<tr>
+  <td>
+   •	The clothing category contributes 45% of revenue and 44% of total transactions, while accessories account for 32% of revenue and 30% of transactions. The company should maintain focus on these two key categories while exploring growth opportunities in others.<br>
+   •	For footwear and outerwear, review the pricing and promotional strategies to improve their performance. Implement category-specific marketing campaigns such as bundle offers or best-seller highlights to increase awareness and drive conversions in underperforming segments.<br>
+  </td>
+</tr>
+<tr>
+  <th>Seasonal Performance</th>
+</tr>
+<tr>
+  <td>
+   •	Revenue and transaction levels show healthy stability, indicating that the business is not strongly affected by seasonality. This stability allows for better revenue and inventory forecasting throughout the year.<br>
+   •	Maintain consistent stock availability and evenly distributed promotions across all seasons. For growth strategies, consider launching creative seasonal campaigns to maximize revenue during specific seasons without disrupting operational balance or stability.
+  </td>
+</tr>
+<tr>
+  <th>Quality Performance</th>
+</tr>
+<tr>
+  <td>
+   •	Continue maintaining strong customer experience, service quality, and attractive promotions. Conduct further analysis to identify key drivers of customer loyalty, so they can be replicated to attract and retain new customers.<br>
+   •	Improve product and service quality (such as customer service, shipping speed, and packaging) to enhance the Average Review Rating. Higher ratings can strengthen customer acquisition and brand reputation.<br>
+   •	Focus on increasing loyalty program subscribers by offering clear and valuable benefits such as exclusive discounts, early access to new collections, or loyalty points. This will help boost retention rates and encourage more repeat purchases.
+  • Female customers should be specifically targeted to increase subscription rates, as none of them have currently subscribed. The company could consider offering subscription plans or incentives that appeal more to female customers.
+  </td>
+</tr>
 </table>
 
