@@ -1,8 +1,5 @@
 # :pushpin: TrendOne Co. Customer Behavior Analysis
 <br>
-
----
-
 ## 📂 Repository Structure
 ```
 trendone_customer_behavior_analysis/
