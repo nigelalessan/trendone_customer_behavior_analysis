@@ -8,11 +8,12 @@ trendone_customer_behavior_analysis/
 │
 ├── datasets/                           # Raw datasets and cleaned datasets used for this project
 │
-├── docs/                               # include img folder and .pbix file for the dashboard
+├── docs/                               # Include img folder and .pbix file for the dashboard
 │    │                                
-│    ├── img/                           # img assets for this analysis project
+│    ├── img/                           # Img assets for this analysis project
 │                            
-└── scripts/                            # code files including .sql for business case EDA and .ipynb for Python data cleaning
+└── scripts/                            # Code files including .sql for business case EDA and .ipynb
+                                          for Python data cleaning
 ```
 
 ---
@@ -154,13 +155,13 @@ To increase the number of customers and transactions, the data analysis team is 
   </tr>
   <tr>
     <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The total number of transactions reached 3.9K, indicating strong customer engagement and platform usage. This suggests that marketing efforts and promotional campaigns have been effective. Increasing transaction volume will likely contribute to both revenue growth and an increase in active customers. The customer demographic is male-dominated, with around 2,652 male customers. Regionally, the South and West areas contribute the largest customer segments, with 1,271 and 1,018 customers, respectively, highlighting these regions as key markets for TrendOne’s sales performance.
+     •	The total number of transactions reached <b>3.9K</b>, indicating strong customer engagement and platform usage. This suggests that marketing efforts and promotional campaigns have been effective. Increasing transaction volume will likely contribute to both <b>revenue growth</b> and an <b>increase in active customers</b>. The customer demographic is <b>male-dominated</b>, with around <b>2,652</b> male customers. Regionally, the <b>South</b> and <b>West</b> areas contribute the largest customer segments, with <b>1,271</b> and <b>1,018</b> customers, respectively, highlighting these regions as key markets for TrendOne’s sales performance.
     </td>
     <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The company generated $233K in revenue from these 3.9K transactions, resulting in an Average Order Value (AOV) of around $60. The highest revenue came from the clothing and accessories categories, both of which play a key role in the company’s overall income. It is recommended that the company focus on these two popular categories while also improving sales in footwear and outerwear, which only contributed 15% and 8% of total transactions, respectively. The data also shows that customers living in the South and West regions made more purchases than other regions, with South contributing $75K and West $62K.
+     •	The company generated <b>$233K</b> in revenue from these 3.9K transactions, resulting in an <b>Average Order Value (AOV)</b> of around <b>$60</b>. The highest revenue came from the clothing and accessories categories, both of which play a key role in the company’s overall income. It is recommended that the company focus on these two popular categories while also improving sales in <b>footwear</b> and <b>outerwear</b>, which only contributed <b>15%</b> and <b>8%</b> of total transactions, respectively. The data also shows that customers living in the <b>South</b> and <b>West</b> regions made more purchases than other regions, with South contributing <b>$75K</b> and West <b>$62K</b>.
     </td>
     <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The Average Order Value stands at $60, with footwear leading slightly at $60.26, followed by clothing at $60.03. This indicates that high-value transactions are primarily driven by these two categories. The high AOV might be influenced by intrinsic factors (such as higher base prices for footwear and clothing) or behavioral factors (such as customers’ willingness to spend more for quality, brand perception, or exclusivity). The young adult age group tends to have a higher average order value compared to other age groups, at $60.45.
+     •	The <b>Average Order Value stands (AOV)</b> at <b>$60</b>, with <b>footwear</b> leading slightly at <b>$60.26</b>, followed by <b>clothing</b> at <b>$60.03</b>. This indicates that high-value transactions are primarily driven by these two categories. The high AOV might be influenced by <b>intrinsic factors</b> (such as higher base prices for footwear and clothing) or <b>behavioral factors</b> (such as customers’ willingness to spend more for quality, brand perception, or exclusivity). The young adult age group tends to have a higher average order value compared to other age groups, at $60.45.
     </td>
   </tr>
   <tr>
@@ -180,10 +181,10 @@ To increase the number of customers and transactions, the data analysis team is 
   </tr>
   <tr>
     <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
-     •	The clothing category generated the highest revenue at $104K (45%), followed by accessories with $74K (32%). This highlights the dominance of these two categories, suggesting that the company should continue to focus on them while seeking to improve sales in footwear and outerwear.
+     •	The <b>clothing</b> category generated the highest revenue at <b>$104K (45%)</b>, followed by <b>accessories</b> with <b>$74K (32%)</b>. This highlights the dominance of these two categories, suggesting that the company should continue to focus on them while seeking to improve sales in <b>footwear</b> and <b>outerwear</b>.
     </td>
     <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
-     • Similarly, the transaction volume aligns with revenue trends clothing accounts for 44% of total sales with 1,737 transactions, accessories for 30% with 1,240, footwear for 15% with 599, and outerwear for only 7% with 324. The company should consider implementing strategies to boost sales in the lower-performing categories.
+     • Similarly, the transaction volume aligns with revenue trends <b>clothing</b> accounts for <b>44%</b> of total sales account for <b>1,737</b> transactions, <b>accessories</b> for <b>30%</b> account for <b>1,240</b>, <b>footwear</b> for <b>15%</b> account for <b>599</b>, and <b>outerwear</b> for only <b>7%</b> account for <b>324</b>. The company should consider implementing strategies to boost sales in the lower-performing categories.
     </td>
   </tr>
     <tr>
@@ -199,10 +200,10 @@ To increase the number of customers and transactions, the data analysis team is 
   </tr>
   <tr>
     <td valign="top"; colspan="3">
-     •	The highest revenue was recorded in the fall season at $60K, although revenue across all four seasons remained relatively close. This indicates stable and consistent customer demand, meaning the business is not heavily dependent on seasonal changes. There are no extreme highs or lows, suggesting financial stability and reduced operational risks during potential low seasons.
+     •	The highest revenue was recorded in the <b>fall season</b> at <b>$60K</b>, although revenue across all four seasons remained relatively close. This indicates <b>stable and consistent customer demand</b>, meaning the business is not heavily dependent on seasonal changes. There are no extreme highs or lows, suggesting <b>financial stability</b> and reduced operational risks during potential low seasons.
     </td>
     <td valign="top"; colspan="3">
-     •	The total number of sales also shows similar stability, with spring slightly leading at 999 transactions, reinforcing the idea that sales performance is balanced throughout the year.
+     •	The total number of sales also shows similar stability, with <b>spring</b> slightly leading at <b>999 transactions</b>, reinforcing the idea that sales performance is <b>balanced throughout the year</b>.
     </td>
   </tr>
     <tr>
@@ -221,13 +222,13 @@ To increase the number of customers and transactions, the data analysis team is 
   </tr>
   <tr>
     <td valign="top"; colspan="2">
-     •	The Repeat Purchase Rate stands at an impressive 89%, indicating a strong customer retention rate. Many customers make repeat purchases after shopping multiple times at TrendOne, showing high levels of loyalty and satisfaction. This could be driven by platform convenience, attractive discounts, excellent after-sales service, or effective marketing strategies.
+     •	The <b>Repeat Purchase Rate</b> stands at an impressive <b>89%</b>, indicating a strong <b>customer retention rate</b>. Many customers make repeat purchases after shopping multiple times at TrendOne, showing high levels of <b>loyalty and satisfaction</b>. This could be driven by platform convenience, attractive discounts, excellent after-sales service, or effective marketing strategies.
     </td>
     <td valign="top"; colspan="2">
-     •	The Average Review Rating is 3.75, which can be considered fairly good, though not outstanding. Despite the average rating, the high repeat purchase rate suggests either high customer loyalty or a strong product need, meaning further analysis is needed to understand why satisfaction scores remain moderate. There is still room for improvement.
+     •	The  <b>Average Review Rating</b> is <b>3.75</b>, which can be considered <b>fairly good</b>, though not outstanding. Despite the average rating, the high repeat purchase rate suggests either <b>high customer loyalty</b> or a <b>strong product need,</b> meaning further analysis is needed to understand why satisfaction scores remain moderate. There is still <b>room for improvement</b>.
     </td>
     <td valign="top"; colspan="2">
-     •	27% of total customers are subscribed to TrendOne’s loyalty program. Increasing the number of subscribers could further strengthen customer retention and boost repeat purchases, as loyal members are more likely to stay engaged with the platform. It was also found that no female customers subscribed to the loyalty program. The entire 27% of total subscribers came exclusively from male customers.
+     •	<b>27%</b> of total customers are subscribed to <b>TrendOne’s loyalty program</b>. Increasing the number of subscribers could further strengthen customer retention and boost repeat purchases, as loyal members are more likely to stay engaged with the platform. It was also found that <b>no female customers subscribed to the loyalty program</b>. The entire <b>27% of total subscribers</b> came exclusively from <b>male customers</b>.
     </td>
   </tr>
 </table>
@@ -241,9 +242,9 @@ To increase the number of customers and transactions, the data analysis team is 
 </tr>
 <tr>
   <td>
-   •	Consider conducting time-based and category-based analysis to identify high-potential product categories and cross-selling opportunities. You can also implement promotions such as “Buy 2, Get a Discount” for best-selling products while improving visibility for underperforming ones. <br>
-   •	Increasing the number of customers will naturally boost transactions and overall revenue. Since customer engagement in the Midwest and Northeast regions is relatively low, the marketing team should launch targeted campaigns in these areas to attract new customers. <br>
-   •	At the same time, localized promotions in the South and West regions where the customer base is already strong, can help strengthen loyalty and further drive sales growth. Given the higher average order value among young adults, the company could leverage this segment for targeted marketing campaigns or introduce subscription-based offers, as this group shows greater spending potential compared to other age groups.
+   •	Consider conducting <b>time-based and category-based analysis</b> to identify high-potential product categories and cross-selling opportunities. You can also implement <b>promotions such as “Buy 2, Get a Discount”</b> for best-selling products while improving visibility for underperforming ones. <br>
+   •	Increasing the number of customers will naturally boost transactions and overall revenue. Since customer engagement in the <b>Midwest</b> and <b>Northeast</b> regions is relatively low, the marketing team should <b>launch targeted campaigns</b> in these areas to attract new customers. <br>
+   •	At the same time, <b>localized promotions</b> in the <b>South</b> and <b>West</b> regions where the customer base is already strong, can help strengthen loyalty and further drive sales growth. Given the higher average order value among young adults, the company could leverage this segment for targeted marketing campaigns or introduce subscription-based offers, as this group shows greater spending potential compared to other age groups.
   </td>
 </tr>
 <tr>
@@ -251,8 +252,8 @@ To increase the number of customers and transactions, the data analysis team is 
 </tr>
 <tr>
   <td>
-   •	The clothing category contributes 45% of revenue and 44% of total transactions, while accessories account for 32% of revenue and 30% of transactions. The company should maintain focus on these two key categories while exploring growth opportunities in others.<br>
-   •	For footwear and outerwear, review the pricing and promotional strategies to improve their performance. Implement category-specific marketing campaigns such as bundle offers or best-seller highlights to increase awareness and drive conversions in underperforming segments.<br>
+   •	The <b>clothing</b> category contributes <b>5% of revenue</b>4 and <b>44% of total transactions</b>, while <b>accessories</b> account for <b>32% of revenue</b> and <b>30% of transactions</b>. The company should <b>maintain focus on these two key categories</b> while exploring growth opportunities in others.<br>
+   •	For <b>footwear</b> and <b>outerwear</b>, review the <b>pricing and promotional strategies</b> to improve their performance. Implement <b>category-specific marketing campaigns</b> such as <b>bundle offers</b> or <b>best-seller highlights</b> to increase awareness and drive conversions in underperforming segments.<br>
   </td>
 </tr>
 <tr>
@@ -260,8 +261,8 @@ To increase the number of customers and transactions, the data analysis team is 
 </tr>
 <tr>
   <td>
-   •	Revenue and transaction levels show healthy stability, indicating that the business is not strongly affected by seasonality. This stability allows for better revenue and inventory forecasting throughout the year.<br>
-   •	Maintain consistent stock availability and evenly distributed promotions across all seasons. For growth strategies, consider launching creative seasonal campaigns to maximize revenue during specific seasons without disrupting operational balance or stability.
+   •	Revenue and transaction levels show healthy stability, indicating that the business is <b>not strongly affected by seasonality</b>. This stability allows for <b>better revenue and inventory forecasting</b> throughout the year.<br>
+   •	Maintain consistent stock availability and evenly distributed promotions across all seasons. For growth strategies, consider launching <b>creative seasonal campaigns</b> to <b>maximize revenue during specific seasons</b> without disrupting operational balance or stability.
   </td>
 </tr>
 <tr>
@@ -269,10 +270,10 @@ To increase the number of customers and transactions, the data analysis team is 
 </tr>
 <tr>
   <td>
-   •	Continue maintaining strong customer experience, service quality, and attractive promotions. Conduct further analysis to identify key drivers of customer loyalty, so they can be replicated to attract and retain new customers.<br>
-   •	Improve product and service quality (such as customer service, shipping speed, and packaging) to enhance the Average Review Rating. Higher ratings can strengthen customer acquisition and brand reputation.<br>
-   •	Focus on increasing loyalty program subscribers by offering clear and valuable benefits such as exclusive discounts, early access to new collections, or loyalty points. This will help boost retention rates and encourage more repeat purchases.
-  • Female customers should be specifically targeted to increase subscription rates, as none of them have currently subscribed. The company could consider offering subscription plans or incentives that appeal more to female customers.
+   •	Continue maintaining strong <b>customer experience</b>, <b>service quality</b>, and <b>attractive promotions</b>. Conduct further analysis to identify <b>key drivers of customer loyalty</b>, so they can be replicated to attract and retain new customers.<br>
+   •	Improve <b>product and service quality</b> (such as customer service, shipping speed, and packaging) to enhance the <b>Average Review Rating</b>. Higher ratings can strengthen <b>customer acquisition and brand reputation</b>.<br>
+   •	Focus on <b>increasing loyalty program subscribers</b> by offering <b>clear and valuable benefits</b> such as exclusive discounts, early access to new collections, or loyalty points. This will help boost <b>retention rates</b> and encourage more <b>repeat purchases</b>.
+  • <b>>Female customers</b should be specifically targeted <b>to increase subscription rates</b>, as none of them have currently subscribed. The company could consider <b>offering subscription plans or incentives that appeal more to female customers</b>.
   </td>
 </tr>
 </table>
