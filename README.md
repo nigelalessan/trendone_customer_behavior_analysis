@@ -7,11 +7,8 @@
 trendone_customer_behavior_analysis/
 │
 ├── datasets/                           # Raw datasets and cleaned datasets used for this project
-│
-├── docs/                               # Include img folder and .pbix file for the dashboard
-│   │                                
-│   ├── img/                            # Img assets for this analysis project
-│                            
+├── docs/                               # Include img folder and .pbix file for the dashboard                                
+│   ├── img/                            # Img assets for this analysis project                           
 └── scripts/                            # Code files including .sql for business case EDA and .ipynb
                                           for Python data cleaning
 ```
