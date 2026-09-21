@@ -274,3 +274,46 @@ trendone_customer_behavior_analysis/
 └── scripts/                            # Code files including .sql for business case EDA and .ipynb
                                           for Python data cleaning
 ```
+
+# DATA REQUIREMENTS
+
+Data requirements define the data and information needed to answer
+the business questions identified for this analysis.
+They map each business question to the required analytical information,
+the corresponding fields available in the dataset, and any data
+limitations that may affect analytical feasibility.
+The requirements are assessed against the available dataset before
+data preparation and analysis begin.
+
+| Business Question                                                                 | Required Data / Information | Dataset Field(s)                                | Status | Purpose                                                                          |
+| --------------------------------------------------------------------------------- | --------------------------- | ----------------------------------------------- | :----: | -------------------------------------------------------------------------------- |
+| **Q1. Which customer characteristics are associated with higher purchase value?** | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Outcome                                                                          |
+|                                                                                   | Customer demographics       | `Age`, `Gender`                                 | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Geographic information      | `Location`                                      | ✓      | Examine geographic differences                                                   |
+|                                                                                   | Product information         | `Category`                                      | ✓      | Compare purchase amount across categories                                        |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Assess relationship with prior purchases                                         |
+|                                                                                   | Engagement                  | `Subscription Status`, `Frequency of Purchases` | ✓      | Compare purchase behavior                                                        |
+| **Q2. How does purchase value vary across customer groups?**                      | Customer demographics       | `Age`, `Gender`                                 | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Geographic information      | `Location`                                      | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Engagement                  | `Subscription Status`                           | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Product information         | `Category`                                      | ✓      | Compare purchase amount across groups                                            |
+| **Q3. How effectively does TrendOne retain customers over time?**                 | Customer identity           | `Customer ID`                                   | ✓      | Identify customers                                                               |
+|                                                                                   | Transaction time            | ~~`Transaction Date`~~                          | ✗      | Required for temporal retention                                                  |
+|                                                                                   | Customer history            | ~~`Transaction history`~~                       | ⚠      | Partial                                                                          |
+| **Q4. Do purchasing behaviors differ across product categories?**                 | Product category            | `Category`                                      | ✓      | Group products                                                                   |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare value                                                                    |
+|                                                                                   | Customer identity           | `Customer ID`                                   | ✓      | Compare customer count cross categories                                          |
+|                                                                                   | Purchase History            | `Previous Purchases`                            | ✓      | Compare purchase history across categories                                       |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare purchasing frequency across categories                                   |
+| **Q5. Is discount usage associated with different purchasing behavior?**          | Discount usage              | `Discount Applied`                              | ✓      | Compare purchasing behavior between customers who used and did not use discounts |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare value                                                                    |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare behavior                                                                 |
+| **Q6. Is subscription status associated with purchasing behavior?**               | Customer identity           | `Customer ID`                                   | ✓      | Identify customers                                                               |
+|                                                                                   | Transaction time            | ~~`Transaction Date`~~                          | ✗      | Required for temporal retention                                                  |
+|                                                                                   | Customer history            | ~~`Transaction history`~~                       | ⚠      | Partial                                                                          |
+| **Q7. Is subscription status associated with discount usage?**                    | Product category            | `Category`                                      | ✓      | Group products                                                                   |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare value                                                                    |
+
+***Note***: Time-based retention analysis will not be performed
