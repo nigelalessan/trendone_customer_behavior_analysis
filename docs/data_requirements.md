@@ -1,0 +1,47 @@
+# DATA REQUIREMENTS
+
+Data requirements define the data and information needed to answer
+the business questions identified for this analysis.
+They map each business question to the required analytical information,
+the corresponding fields available in the dataset, and any data
+limitations that may affect analytical feasibility.
+The requirements are assessed against the available dataset before
+data preparation and analysis begin.
+
+| Business Question                                                                 | Required Data / Information | Dataset Field(s)                                | Status | Purpose                                                                          |
+| --------------------------------------------------------------------------------- | --------------------------- | ----------------------------------------------- | :----: | -------------------------------------------------------------------------------- |
+| **Q1. Which customer characteristics are associated with higher purchase value?** | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Measure purchase value as the outcome                                            |
+|                                                                                   | Customer demographics       | `Age`, `Gender`                                 | ✓      | Compare purchase amount across groups                                            |
+|                                                                                   | Geographic information      | `Location`                                      | ✓      | Examine geographic differences                                                   |
+|                                                                                   | Product information         | `Category`                                      | ✓      | Compare purchase amount across categories                                        |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Assess relationship with prior purchases                                         |
+|                                                                                   | Engagement                  | `Subscription Status`, `Frequency of Purchases` | ✓      | Compare purchase behavior                                                        |
+| **Q2. How does purchase value vary across customer groups?**                      | Customer demographics       | `Age`, `Gender`                                 | ✓      | Define customer groups based on demographic characteristics                      |
+|                                                                                   | Geographic information      | `Location`                                      | ✓      | Define customer groups based on geographic characteristics                       |
+|                                                                                   | Engagement                  | `Subscription Status`                           | ✓      | Define customer groups based on subscription status                              |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Define customer groups based on purchase history                                 |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Define customer groups based on purchase frequency                               |
+|                                                                                   | Product information         | `Category`                                      | ✓      | Define customer groups based on product category                                 |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Measure and compare purchase value across customer groups                        |
+| **Q3. How effectively does TrendOne retain customers over time?**                 | Customer identity           | `Customer ID`                                   | ✓      | Identify customers                                                               |
+|                                                                                   | Transaction time            | ~~`Transaction Date`~~                          | ✗      | Required for temporal retention                                                  |
+|                                                                                   | Customer history            | ~~`Transaction history`~~                       | ⚠      | Partial                                                                          |
+| **Q4. Do purchasing behaviors differ across product categories?**                 | Product category            | `Category`                                      | ✓      | Group purchasing behavior by product category                                    |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare purchase value across product categories                                 |
+|                                                                                   | Customer identity           | `Customer ID`                                   | ✓      | Compare customer count cross categories                                          |
+|                                                                                   | Purchase History            | `Previous Purchases`                            | ✓      | Compare purchase history across categories                                       |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare purchasing frequency across categories                                   |
+| **Q5. Is discount usage associated with different purchasing behavior?**          | Discount usage              | `Discount Applied`                              | ✓      | Compare purchasing behavior between customers who used and did not use discounts |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare purchase value between discount and non-discount customers               |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Compare purchase history between discount and non-discount customers             |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare purchase frequency between discount groups                               |
+|                                                                                   | Customer identity           | `Customer ID`                                   | ✓      | Compare customer count between discount and non-discount                         |
+| **Q6. Is subscription status associated with purchasing behavior?**               | Engagement                  | `Subscription Status`                           | ✓      | Define subscriber and non-subscriber groups                                      |
+|                                                                                   | Purchase value              | `Purchase Amount (USD)`                         | ✓      | Compare purchase value between subscription groups                               |
+|                                                                                   | Purchase history            | `Previous Purchases`                            | ✓      | Compare purchase history between subscription groups                             |
+|                                                                                   | Purchase frequency          | `Frequency of Purchases`                        | ✓      | Compare purchasing frequency between subscription groups                         |
+|                                                                                   | Customer identity           | `Customer ID`                                   | ✓      | Measure customer count in each subscription group                                |
+| **Q7. Is subscription status associated with discount usage?**                    | Engagement                  | `Subscription Status`                           | ✓      | Define subscription groups                                |
+|                                                                                   | Discount usage              | `Discount Applied`                              | ✓      | Measure discount usage across subscription groups                                |
+
+***Note***: time-based retention analysis will not be performed
