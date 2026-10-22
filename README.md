@@ -1,4 +1,4 @@
-# :pushpin: TrendOne Co. Customer Behavior Analysis
+# 📌 TrendOne Co. Customer Behavior Analysis
 
 <br>
 
