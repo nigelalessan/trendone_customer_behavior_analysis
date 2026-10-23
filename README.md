@@ -325,7 +325,7 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Customer Behavior
 
 <p align="center">
-  <img src="docs/img/dashboard_customer_behavior_2.png" alt="Power BI customer behavior dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_behavior_2.png" alt="Power BI customer behavior dashboard" width="40%">
 </p>
 
 **What this page communicates:**
@@ -336,16 +336,16 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Customer Segmentation
 
 <p align="center">
-  <img src="docs/img/dashboard_customer_segmentation_3_1.png" alt="Power BI customer segmentation dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_segmentation_3_1.png" alt="Power BI customer segmentation dashboard" width="40%">
 </p>
 <p align="center">
-  <img src="docs/img/dashboard_customer_segmentation_3_2.png" alt="Power BI customer segmentation dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_segmentation_3_2.png" alt="Power BI customer segmentation dashboard" width="40%">
 </p>
 <p align="center">
-  <img src="docs/img/dashboard_customer_segmentation_3_3.png" alt="Power BI customer segmentation dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_segmentation_3_3.png" alt="Power BI customer segmentation dashboard" width="40%">
 </p>
 <p align="center">
-  <img src="docs/img/dashboard_customer_segmentation_3_4.png" alt="Power BI customer segmentation dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_segmentation_3_4.png" alt="Power BI customer segmentation dashboard" width="40%">
 </p>
 
 **What this page communicates:**
@@ -494,7 +494,7 @@ trendone_customer_analytics/
 ### 1. Clone the Repository
 
 ```bash
-git clone [EDIT: YOUR_GITHUB_REPOSITORY_URL]
+git clone https://github.com/nigelalessan/trendone_customer_behavior_analysis
 cd trendone_customer_analytics
 ```
 
