@@ -1,276 +1,596 @@
-# 📌 TrendOne Co. Customer Behavior Analysis
+# 🛍️ TrendOne Customer Analytics
+### Customer Behavior Analysis · Statistical Testing · Exploratory Segmentation
 
-<br>
+<p align="center">
+  <img src="docs/images/trendone_banner.png" alt="TrendOne Customer Analytics banner" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Analysis-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/SQL-Data%20Validation-4479A1?logo=postgresql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black" alt="Power BI">
+  <img src="https://img.shields.io/badge/Statistics-Hypothesis%20Testing-6C5CE7" alt="Statistics">
+  <img src="https://img.shields.io/badge/Machine%20Learning-K--Means-orange" alt="K-Means">
+</p>
+
+<p align="center">
+  <b>An end-to-end customer analytics portfolio project focused on turning customer shopping data into interpretable findings, exploratory customer profiles, and actionable business recommendations.</b>
+</p>
+
+<p align="center">
+  <a href="#-project-overview">Overview</a> •
+  <a href="#-key-findings">Key Findings</a> •
+  <a href="#-dashboard-preview">Dashboard</a> •
+  <a href="#-methodology">Methodology</a> •
+  <a href="#-repository-structure">Repository</a>
+</p>
 
 ---
 
-<h1 align="center">TrendOne Co.</h1>
+## 📌 Project Overview
 
-This project is a **simulated case study** based on a fictional e-commerce company, **TrendOne** is a new B2C e-commerce retailer offering casual fashion products in the US.. TrendOne's mission is to provide quality fashion products from multiple brands with a personalized and easy shopping experience, optimizing retention through product recommendations, a loyalty program, and relevant automated emails.
+How can a business better understand customer purchasing behavior when the available data provides only a limited view of its customers?
 
-TrendOne achieved 3900 total transactions and generated revenue approximately $233K. TrendOne has also introduced a subscription feature that provides special benefits to its customers. 
-To increase the number of customers and transactions, the data analysis team is tasked with performing an analysis aimed at boosting sales revenue and developing effective marketing strategies. TrendOne also wants to understand how effective its advertisements are in increasing sales. This analysis will be very useful for various cross-functional teams and will be used as a basis for decision-making. The main insights will be divided s follows:
+**TrendOne Customer Analytics** explores this question through data quality assessment, exploratory data analysis, statistical hypothesis testing, SQL-based analysis, K-Means clustering, and Power BI reporting.
 
-### :star: Northstar Metrics
-* Sales Performance: 
-  * Number of Transactions: The transaction volume
-  * Average Order Value (AOV):  Average purchase amount each transaction
-  * Sales Revenue: Total revenue generated
-* Product Performance
-  *	Revenue by Category: Revenue contribution per product category
-  * Sales by Category: Number of products sold per category 
-### :hammer_and_wrench: Supporting Metrics
-* Seasonal Performance: 
-  * Revenue by Season: Measuring the impact of seasonal factors on revenue
-  * Sales by Season: Calculating total transactions per season
-### :heart: Health Metrics
-* Quality Performance:
-  *	% Repeat Purchase: The percentage of repeat buyers or returning customers
-  *	Average Review Rating: Average product rating across all products
-  *	%  Subscribers: The ratio of subscribers to non-subscribers
+The project examines whether recorded purchase amounts differ across selected customer groups, investigates the relationship between subscription status and discount usage, and explores whether customers can be grouped into interpretable profiles using selected numerical features.
 
-# :mag_right: Observation
-<table align="center">
-  <tr>
-    <th colspan="6">Sales Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_number_of_transaction.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" colspan="6">
-    1. <b>Number of Transactions</b> reached a solid <b>3.9k</b>, which is a <b>healthy</b> indicator of purchasing activity.<br>
-    2. The <b>Total Revenue</b> generated was <b>$233K</b> from <b>3.9K</b> transactions.<br>
-    3. The overall <b>Average Order Value</b> is almost <b>$60</b>, with the <b>footwear</b> category leading at an average of <b>$60.26</b>, followed by the clothing category.<br>
-    </td>
-  </tr>
-  <tr>
-    <th colspan="6">Product Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="3">
-       <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_by_category.jpg">
-    </td>
-    <td align="center"; colspan="3">
-      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_category.jpg">
-    </td>
+Rather than treating every observed pattern as a business conclusion, the analysis distinguishes statistically supported findings from hypotheses that require further validation.
 
-  </tr>
+> **Business case disclosure:** TrendOne Co. is a simulated business case developed for this portfolio project. The analysis does not represent employment, consulting work, or verified business outcomes for an actual company.
+
+### 🎯 Objectives
+
+- 🔎 Assess data quality and determine which business questions the dataset can support.
+- 📊 Explore customer characteristics and purchasing behavior.
+- 🧪 Apply appropriate statistical tests and effect sizes to evaluate group differences and associations.
+- 🧩 Develop exploratory customer profiles using K-Means clustering.
+- 🗄️ Use SQL to validate data and answer structured business questions.
+- 📈 Communicate analytical results through an interactive Power BI dashboard.
+- 💡 Translate findings into practical recommendations while documenting data and methodological limitations.
+
+### 🧰 Tools & Technologies
+
+| Tool | Application |
+|---|---|
+| Python | Data preparation, EDA, statistical analysis, clustering |
+| Pandas & NumPy | Data manipulation and numerical operations |
+| SciPy / Statistical libraries | Hypothesis testing and statistical calculations |
+| Scikit-learn | K-Means clustering and cluster evaluation |
+| SQL / PostgreSQL | Data validation, customer metrics, business queries |
+| Power BI | Interactive dashboard and business reporting |
+| Jupyter Notebook | Reproducible analytical workflow |
+| Git & GitHub | Version control and project documentation |
+| diagrams.net | Analytical workflow and architecture diagrams |
+
+[EDIT: Confirm the exact Python libraries, SQL engine, and diagram tool used in the repository.]
+
+---
+
+## 📊 Key Findings
+
+The analysis produced three primary findings.
+
+<table>
   <tr>
-    <td valign="top" colspan="6">
-    1. The <b>highest revenue</b> came from the clothing sector, generating <b>$104K</b> of the total <b>$233K</b> revenue, meaning nearly half or precisely 45 of the revenue is from the clothing category.<br>
-    2. The <b>highest number</b> of sales also came from the clothing sector, accounting for around <b>44%</b> of all sales.<br>
+    <td width="33%" align="center">
+      <h3>3,900</h3>
+      <b>Customer Records</b>
+      <br>
+      <sub>18 columns in the provided dataset</sub>
     </td>
-  </tr>
-  <tr>
-    <th colspan="6">Seasonal Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="3">
-      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_by_seasons.jpg">
+    <td width="33%" align="center">
+      <h3>0.70</h3>
+      <b>Cramér's V</b>
+      <br>
+      <sub>Strong subscription–discount association</sub>
     </td>
-    <td align="center"; colspan="3">
-      <img width="500px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_seasons.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" colspan="6">
-    1.	By season, <b>Fall</b> ranks first, contributing <b>$60K</b> in <b>revenue</b>, although the <b>difference</b> with other seasons is <b>not very significant</b>.<br>
-    2.	The <b>number of transactions</b> across all <b>four seasons does not show a clear dominance</b>, with each season having <b>over 900</b> transactions.
-    </td>
-  </tr>
-  <tr>
-    <th colspan="6">Quality Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_repeat_purchase_rate.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_review_rating.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_subscribers_percentage.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top" colspan="6">
-    1.	The <b>Repeat Purchase Rate</b> (or Returning Customer Percentage) is high at <b>89%</b>, indicating that <b>almost every customer</b> who has shopped at TrendOne is <b>likely to return</b>.<br>
-    2.	The <b>Average Review Rating</b> is <b>3.75</b>, which can be considered <b>fairly good</b> or <b>average</b>.<br>
-    3.	Only 27% of customers are subscribed to TrendOne’s loyalty program.
+    <td width="33%" align="center">
+      <h3>6</h3>
+      <b>Exploratory Clusters</b>
+      <br>
+      <sub>Silhouette score: 0.2864</sub>
     </td>
   </tr>
 </table>
 
-<br>
+### 1. 📉 No Statistically Significant Purchase Amount Differences Were Detected
 
-# :microscope: Analysis
-<table style="table-layout: fixed; width: 100%; align: center">
-  <tr>
-    <th colspan="6">Sales Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="2">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_customers.jpg">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_customers.jpg">
-    </td>
-    <td align="center"; colspan="2">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_south_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_south.jpg">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_west_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_revenue_west.jpg">
-    </td>
-    <td align="center"; colspan="2">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_footwear_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_footwear.jpg">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_clothing_filter.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_order_value_clothing.jpg">
-     <img width="150px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_filter_young_adult.jpg">
-     <img width="200px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_aov_young_adult.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The total number of transactions reached <b>3.9K</b>, indicating strong customer engagement and platform usage. This suggests that marketing efforts and promotional campaigns have been effective. Increasing transaction volume will likely contribute to both <b>revenue growth</b> and an <b>increase in active customers</b>. The customer demographic is <b>male-dominated</b>, with around <b>2,652</b> male customers. Regionally, the <b>South</b> and <b>West</b> areas contribute the largest customer segments, with <b>1,271</b> and <b>1,018</b> customers, respectively, highlighting these regions as key markets for TrendOne’s sales performance.
-    </td>
-    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The company generated <b>$233K</b> in revenue from these 3.9K transactions, resulting in an <b>Average Order Value (AOV)</b> of around <b>$60</b>. The highest revenue came from the clothing and accessories categories, both of which play a key role in the company’s overall income. It is recommended that the company focus on these two popular categories while also improving sales in <b>footwear</b> and <b>outerwear</b>, which only contributed <b>15%</b> and <b>8%</b> of total transactions, respectively. The data also shows that customers living in the <b>South</b> and <b>West</b> regions made more purchases than other regions, with South contributing <b>$75K</b> and West <b>$62K</b>.
-    </td>
-    <td valign="top"; colspan="2"; style="overflow-wrap: break-word;">
-     •	The <b>Average Order Value stands (AOV)</b> at <b>$60</b>, with <b>footwear</b> leading slightly at <b>$60.26</b>, followed by <b>clothing</b> at <b>$60.03</b>. This indicates that high-value transactions are primarily driven by these two categories. The high AOV might be influenced by <b>intrinsic factors</b> (such as higher base prices for footwear and clothing) or <b>behavioral factors</b> (such as customers’ willingness to spend more for quality, brand perception, or exclusivity). The young adult age group tends to have a higher average order value compared to other age groups, at $60.45.
-    </td>
-  </tr>
-  <tr>
-    <th colspan="6">Product Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="3">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_clothing.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_accessories.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_contributors.jpg">
-    </td>
-    <td align="center"; colspan="3">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_clothing.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_accessories.jpg">
-     <img width="300px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_category.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
-     •	The <b>clothing</b> category generated the highest revenue at <b>$104K (45%)</b>, followed by <b>accessories</b> with <b>$74K (32%)</b>. This highlights the dominance of these two categories, suggesting that the company should continue to focus on them while seeking to improve sales in <b>footwear</b> and <b>outerwear</b>.
-    </td>
-    <td valign="top"; colspan="3"; style="overflow-wrap: break-word;">
-     • Similarly, the transaction volume aligns with revenue trends <b>clothing</b> accounts for <b>44%</b> of total sales account for <b>1,737</b> transactions, <b>accessories</b> for <b>30%</b> account for <b>1,240</b>, <b>footwear</b> for <b>15%</b> account for <b>599</b>, and <b>outerwear</b> for only <b>7%</b> account for <b>324</b>. The company should consider implementing strategies to boost sales in the lower-performing categories.
-    </td>
-  </tr>
-    <tr>
-    <th colspan="6">Seasonal Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="3">
-     <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_revenue_seasons.jpg">
-    </td>
-    <td align="center"; colspan="3">
-     <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_sales_by_seasons.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"; colspan="3">
-     •	The highest revenue was recorded in the <b>fall season</b> at <b>$60K</b>, although revenue across all four seasons remained relatively close. This indicates <b>stable and consistent customer demand</b>, meaning the business is not heavily dependent on seasonal changes. There are no extreme highs or lows, suggesting <b>financial stability</b> and reduced operational risks during potential low seasons.
-    </td>
-    <td valign="top"; colspan="3">
-     •	The total number of sales also shows similar stability, with <b>spring</b> slightly leading at <b>999 transactions</b>, reinforcing the idea that sales performance is <b>balanced throughout the year</b>.
-    </td>
-  </tr>
-    <tr>
-    <th colspan="6">Quality Performance</th>
-  </tr>
-  <tr>
-    <td align="center"; colspan="2">
-      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_repeat_purchase_rate.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_average_review_rating.jpg">
-    </td>
-    <td align="center"; colspan="2">
-      <img width="250px"; src="https://github.com/nigelalessan/trendone_customer_behavior_analysis/blob/main/docs/img/img_subscribers_percentage.jpg">
-    </td>
-  </tr>
-  <tr>
-    <td valign="top"; colspan="2">
-     •	The <b>Repeat Purchase Rate</b> stands at an impressive <b>89%</b>, indicating a strong <b>customer retention rate</b>. Many customers make repeat purchases after shopping multiple times at TrendOne, showing high levels of <b>loyalty and satisfaction</b>. This could be driven by platform convenience, attractive discounts, excellent after-sales service, or effective marketing strategies.
-    </td>
-    <td valign="top"; colspan="2">
-     •	The  <b>Average Review Rating</b> is <b>3.75</b>, which can be considered <b>fairly good</b>, though not outstanding. Despite the average rating, the high repeat purchase rate suggests either <b>high customer loyalty</b> or a <b>strong product need,</b> meaning further analysis is needed to understand why satisfaction scores remain moderate. There is still <b>room for improvement</b>.
-    </td>
-    <td valign="top"; colspan="2">
-     •	<b>27%</b> of total customers are subscribed to <b>TrendOne’s loyalty program</b>. Increasing the number of subscribers could further strengthen customer retention and boost repeat purchases, as loyal members are more likely to stay engaged with the platform. It was also found that <b>no female customers subscribed to the loyalty program</b>. The entire <b>27% of total subscribers</b> came exclusively from <b>male customers</b>.
-    </td>
-  </tr>
-</table>
+The tests did not detect statistically significant purchase amount differences across the demographic and customer groups examined, including age group, gender, region, product category, discount usage, and subscription status.
 
-<br>
+The reported effect sizes were also very small.
 
-# :rocket: Recommendation
-<table align="center">
-<tr>
-  <th>Sales Performance</th>
-</tr>
-<tr>
-  <td>
-   •	Consider conducting <b>time-based and category-based analysis</b> to identify high-potential product categories and cross-selling opportunities. You can also implement <b>promotions such as “Buy 2, Get a Discount”</b> for best-selling products while improving visibility for underperforming ones. <br>
-   •	Increasing the number of customers will naturally boost transactions and overall revenue. Since customer engagement in the <b>Midwest</b> and <b>Northeast</b> regions is relatively low, the marketing team should <b>launch targeted campaigns</b> in these areas to attract new customers. <br>
-   •	At the same time, <b>localized promotions</b> in the <b>South</b> and <b>West</b> regions where the customer base is already strong, can help strengthen loyalty and further drive sales growth. Given the higher average order value among young adults, the company could leverage this segment for targeted marketing campaigns or introduce subscription-based offers, as this group shows greater spending potential compared to other age groups.
-  </td>
-</tr>
-<tr>
-  <th>Product Performance</th>
-</tr>
-<tr>
-  <td>
-   •	The <b>clothing</b> category contributes <b>5% of revenue</b>4 and <b>44% of total transactions</b>, while <b>accessories</b> account for <b>32% of revenue</b> and <b>30% of transactions</b>. The company should <b>maintain focus on these two key categories</b> while exploring growth opportunities in others.<br>
-   •	For <b>footwear</b> and <b>outerwear</b>, review the <b>pricing and promotional strategies</b> to improve their performance. Implement <b>category-specific marketing campaigns</b> such as <b>bundle offers</b> or <b>best-seller highlights</b> to increase awareness and drive conversions in underperforming segments.<br>
-  </td>
-</tr>
-<tr>
-  <th>Seasonal Performance</th>
-</tr>
-<tr>
-  <td>
-   •	Revenue and transaction levels show healthy stability, indicating that the business is <b>not strongly affected by seasonality</b>. This stability allows for <b>better revenue and inventory forecasting</b> throughout the year.<br>
-   •	Maintain consistent stock availability and evenly distributed promotions across all seasons. For growth strategies, consider launching <b>creative seasonal campaigns</b> to <b>maximize revenue during specific seasons</b> without disrupting operational balance or stability.
-  </td>
-</tr>
-<tr>
-  <th>Quality Performance</th>
-</tr>
-<tr>
-  <td>
-   •	Continue maintaining strong <b>customer experience</b>, <b>service quality</b>, and <b>attractive promotions</b>. Conduct further analysis to identify <b>key drivers of customer loyalty</b>, so they can be replicated to attract and retain new customers.<br>
-   •	Improve <b>product and service quality</b> (such as customer service, shipping speed, and packaging) to enhance the <b>Average Review Rating</b>. Higher ratings can strengthen <b>customer acquisition and brand reputation</b>.<br>
-   •	Focus on <b>increasing loyalty program subscribers</b> by offering <b>clear and valuable benefits</b> such as exclusive discounts, early access to new collections, or loyalty points. This will help boost <b>retention rates</b> and encourage more <b>repeat purchases</b>.
-  • <b>>Female customers</b should be specifically targeted <b>to increase subscription rates</b>, as none of them have currently subscribed. The company could consider <b>offering subscription plans or incentives that appeal more to female customers</b>.
-  </td>
-</tr>
-</table>
+**Interpretation:** The available evidence does not show meaningful purchase amount differences across these groups in this dataset. This does not prove that the groups are identical or that the variables are irrelevant in every business context.
+
+### 2. 🎟️ Subscription Status and Discount Usage Were Strongly Associated
+
+The chi-square test of independence produced the following results:
+
+| Statistic            | Result   |
+|----------------------|---------:|
+| Chi-square statistic | 1,908.92 |
+| Degrees of freedom   | 1        |
+| p-value              | < 0.001  |
+| Cramér's V           | 0.700    |
+
+**Interpretation:** Subscription status and discount usage were strongly associated in the analyzed data.
+
+This relationship warrants further investigation into discount eligibility rules, subscription benefits, and the underlying data structure. The association does not establish causality, and the pattern should be checked against the original data source before being treated as a real-world business insight.
+
+### 3. 🧩 Six Exploratory Customer Profiles Were Identified
+
+K-Means clustering produced six profiles based on selected numerical customer features.
+
+The final model achieved a silhouette score of **0.2864**, suggesting limited separation between clusters.
+
+**Interpretation:** The profiles provide a starting point for further investigation, but they are not validated customer personas. Their usefulness for campaign targeting, customer prioritization, or other operational decisions would need to be tested.
+
+---
+
+## 🧭 Business Questions
+
+The project is organized around four analytical areas.
+
+| Business Area             | Key Questions                                                                                                                   |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 💰 Customer Value        | Which observed characteristics are associated with purchase amount? Do recorded purchase amounts differ across customer groups? |
+| 🛒 Product & Promotions  | How does purchase amount vary by product category? Is discount usage associated with purchasing behavior?                       |
+| 🤝 Customer Engagement   | Does purchase amount differ by subscription status? How strongly are subscription status and discount usage associated?         |
+| 🔄 Customer Retention    | Can retention be measured from the available data? Can exploratory customer profiles be identified?                             |
+
+### Important Scope Decision
+
+Actual customer retention over time cannot be measured reliably because the dataset does not contain transaction timestamps or longitudinal customer activity records.
+
+Previous Purchases and Frequency of Purchases are treated as recorded behavioral attributes, not substitutes for time-based retention metrics.
+
+📄 **Detailed documentation:** [EDIT: Link to `docs/business_questions.md`]
+
+---
+
+## 🔄 Analytical Workflow
+
+The project follows a structured workflow, from business understanding to communication of findings.
+
+<p align="center">
+  <img src="docs/architecture/analytical_workflow.png" alt="TrendOne analytical workflow" width="100%">
+</p>
+
+### Workflow Stages
+
+1. **Business Understanding** — Define the business context, analytical objectives, and key questions.
+2. **Data Assessment** — Review the dataset structure, data types, missing values, uniqueness, and analytical feasibility.
+3. **Data Preparation** — Prepare the data and derived variables for consistent analysis.
+4. **Exploratory Data Analysis** — Examine distributions, group patterns, and potential relationships.
+5. **Statistical Analysis** — Apply appropriate tests, evaluate effect sizes, and interpret results.
+6. **Customer Segmentation** — Develop exploratory profiles and assess cluster quality.
+7. **SQL Analysis & Validation** — Run structured queries and compare relevant outputs with Python.
+8. **Business Intelligence & Recommendations** — Present findings and limitations through Power BI and project documentation.
+
+The sequence represents the overall analytical workflow. Some activities, such as SQL analysis and Python analysis, can be performed in parallel.
+
+### 🏗️ Data Architecture
+
+<p align="center">
+  <img src="docs/architecture/data_architecture.png" alt="TrendOne data architecture" width="100%">
+</p>
+
+The workflow starts with the raw dataset, produces a prepared dataset, and uses the prepared data for analysis and reporting. Python, SQL, and Power BI serve complementary roles in the project.
+
+[EDIT: Ensure this diagram matches the actual data sources used by your Power BI file, including any separate cluster output or evaluation metrics.]
+
+---
+
+## 🧹 Data Understanding & Preparation
+
+### Dataset Summary
+
+| Attribute | Result |
+|---|---|
+| Rows | 3,900 |
+| Columns | 18 |
+| Unique Customer IDs | 3,900 |
+| Exact duplicate rows | None detected |
+| Missing Review Rating values | 37 |
+| Missing Review Rating percentage | Approximately 0.95% |
+| Data granularity | One record per customer identifier in the provided file |
+
+### Data Quality Decisions
+
+- Customer ID is treated as an identifier rather than a numerical measurement.
+- Exact duplicate records were checked during data assessment.
+- Missing Review Rating values are preserved as missing rather than replaced with zero.
+- Age Group is derived from age for grouped analysis and reporting.
+- The available columns and data granularity are evaluated against the intended business questions before analysis.
+
+### Data Preparation Flow
+
+```text
+Raw Dataset
+    ↓
+Data Assessment
+    ↓
+Data Cleaning & Preparation
+    ↓
+Prepared Dataset
+    ├── Exploratory Data Analysis
+    ├── Statistical Analysis
+    ├── Customer Segmentation
+    ├── SQL Analysis
+    └── Power BI Reporting
+```
+
+📄 **Related documentation:**
+- [Data Assessment](docs/data_assessment.md)
+- [Data Preparation](docs/data_preparation.md)
+- [Data Requirements](docs/data_requirements.md)
+
+---
+
+## 🧪 Statistical Analysis
+
+Statistical methods were selected based on the types of variables and the questions being investigated.
+
+| Analytical Scenario | Method | Purpose |
+|---|---|---|
+| Two numerical variables | Spearman correlation | Evaluate monotonic association |
+| Numerical outcome, two independent groups | Welch's t-test | Compare group means without assuming equal variances |
+| Numerical outcome, more than two groups | Welch's ANOVA | Compare group means without assuming equal variances |
+| Two categorical variables | Chi-square test of independence | Evaluate categorical association |
+
+### Statistical Decision Flow
+
+<p align="center">
+  <img src="docs/architecture/statistical_decision_flow.png" alt="Statistical test selection flowchart" width="85%">
+</p>
+
+### Interpretation Principles
+
+- Significance threshold: \(\alpha = 0.05\).
+- Effect sizes are considered alongside p-values.
+- Statistical significance is not equivalent to business importance.
+- Association does not establish causality.
+- Non-significant results do not prove that no relationship exists.
+- The validity of the tests depends on the assumptions and structure of the available data.
+
+[EDIT: Link the diagram path to the actual image committed in your repository.]
+
+---
+
+## 🧩 Customer Segmentation
+
+### Model Configuration
+
+| Parameter | Value |
+|---|---|
+| Algorithm | K-Means |
+| Number of clusters | 6 |
+| Random state | 42 |
+| Number of initializations | 20 |
+| Silhouette score | 0.2864 |
+
+The clusters are exploratory profiles derived from selected numerical features. They should not be interpreted as validated measures of customer loyalty, profitability, or retention.
+
+### Cluster Profile Summary
+
+| Cluster | Customers | Avg. Purchase Amount | Avg. Previous Purchases | Avg. Review Rating |
+|---|---:|---:|---:|---:|
+| C0 | 647 | $76.00 | 12.11 | 4.34 |
+| C1 | 673 | $45.99 | 38.88 | 3.15 |
+| C2 | 665 | $39.48 | 11.90 | 3.31 |
+| C3 | 646 | $80.33 | 39.76 | 4.22 |
+| C4 | 625 | $82.77 | 20.78 | 3.06 |
+| C5 | 644 | $35.84 | 28.39 | 4.43 |
+
+### Initial Observations
+
+- **C3:** Higher average purchase amount and the highest average previous purchase count among the six clusters.
+- **C4:** Highest average purchase amount, alongside the lowest average review rating.
+- **C5:** Lowest average purchase amount, alongside the highest average review rating.
+- **C0:** Higher average purchase amount despite a relatively low average previous purchase count.
+
+These are descriptive patterns, not explanations of why customers behave differently.
+
+### Model Limitations
+
+The silhouette score of 0.2864 indicates limited cluster separation. A separate initialization-sensitivity experiment also showed that assignments varied across tested initializations.
+
+Further validation should examine alternative feature sets, scaling choices, cluster counts, stability, interpretability, and relevance to measurable business outcomes.
+
+📓 **Notebook:** [EDIT: Link to `notebooks/05_customer_segmentation.ipynb`]
+
+---
+
+## 📈 Dashboard Preview
+
+The Power BI dashboard translates the analytical outputs into a business-facing reporting experience.
+
+### Executive Overview
+
+<p align="center">
+  <img src="docs/images/dashboard_overview.png" alt="Power BI executive overview dashboard" width="100%">
+</p>
+
+**What this page communicates:**
+- Overall customer snapshot.
+- Average recorded purchase amount and review rating.
+- Subscription and discount usage patterns.
+- Key findings and interpretation cautions.
+
+### Customer Behavior
+
+<p align="center">
+  <img src="docs/images/dashboard_customer_behavior.png" alt="Power BI customer behavior dashboard" width="100%">
+</p>
+
+**What this page communicates:**
+- Purchase amount across selected customer groups.
+- Customer distribution across product categories and demographic groups.
+- Recorded purchasing attributes available in the dataset.
+
+### Customer Segmentation
+
+<p align="center">
+  <img src="docs/images/dashboard_segmentation.png" alt="Power BI customer segmentation dashboard" width="100%">
+</p>
+
+**What this page communicates:**
+- Customer distribution by cluster.
+- Average purchase amount by cluster.
+- Cluster-level behavioral profiles.
+- Model evaluation and limitations.
+
+> **Dashboard note:** The recorded Purchase Amount should not be interpreted as total historical customer spending, revenue, or customer lifetime value without evidence that the dataset supports those definitions.
+
+🔗 **Interactive dashboard:** [EDIT: Insert Power BI link if publicly accessible]
+
+---
+
+## 💡 Business Recommendations
+
+### 1. Investigate Subscription and Discount Rules
+
+Review whether subscription status determines discount eligibility, whether the observed association is driven by business rules, and whether the same pattern exists in transaction-level data.
+
+### 2. Improve Customer Value Measurement
+
+Avoid relying on a single demographic attribute or purchasing variable as a complete measure of customer value. Incorporate historical net spending, transaction frequency over defined periods, returns, and margin data when available.
+
+### 3. Validate Customer Profiles Before Acting on Them
+
+Use the clusters to formulate follow-up questions rather than immediately assigning customers to campaigns. Evaluate segment stability and test whether the profiles correspond to meaningful business outcomes.
+
+### 4. Strengthen the Data Foundation
+
+Prioritize transaction timestamps, stable customer identifiers, product-level sales, discount and promotion identifiers, margin data, and customer activity history.
+
+These additions would enable more reliable retention analysis, cohort analysis, customer value measurement, and campaign evaluation.
+
+📄 **Detailed recommendations:** [EDIT: Link to `docs/07_recommendations.md`]
+
+---
+
+## ⚠️ Limitations & Data Requirements
+
+The findings should be interpreted within the scope of the available dataset.
+
+- **Limited data granularity:** The provided file contains one record per customer identifier rather than detailed transaction-level history.
+- **No transaction timestamps:** Actual retention rates, purchase intervals, and time-based customer activity cannot be measured reliably.
+- **Missing review ratings:** Thirty-seven Review Rating values are missing.
+- **Statistical limitations:** The analysis does not establish causality, and non-significant results do not prove the absence of a relationship.
+- **Segmentation limitations:** Cluster separation is limited, and the profiles have not been validated against operational outcomes.
+- **Generalizability:** Findings describe this dataset and may not represent other customer populations or real business environments.
+
+### Additional Data That Would Improve the Analysis
+
+| Data Requirement | Analytical Value |
+|---|---|
+| Transaction ID and timestamp | Cohort analysis, retention, purchase intervals |
+| Stable customer ID across transactions | Customer purchase history |
+| Quantity, price, discount, net sales | Purchase value and promotion analysis |
+| Product cost and margin | Profitability analysis |
+| Promotion and eligibility identifiers | Discount effectiveness investigation |
+| Acquisition and activity history | Customer lifecycle analysis |
+| Campaign exposure and response | Campaign evaluation |
+
+📄 **Full limitations:** [EDIT: Link to `docs/limitations.md`]
+
+---
 
 ## 📂 Repository Structure
-```
-trendone_customer_behavior_analysis/
+
+```text
+trendone_customer_analytics/
 │
-├── datasets/                           # Raw datasets and cleaned datasets used for this project
-├── docs/                               # Include img folder and .pbix file for the dashboard                                
-│   ├── img/                            # Img assets for this analysis project                           
-└── scripts/                            # Code files including .sql for business case EDA and .ipynb
-                                          for Python data cleaning
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── raw/
+│   │   └── trendOne_raw.csv
+│   └── processed/
+│       └── trendOne_prepared.csv
+│
+├── notebooks/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_preparation.ipynb
+│   ├── 03_eda.ipynb
+│   ├── 04_statistical_analysis.ipynb
+│   └── 05_customer_segmentation.ipynb
+│
+├── sql/
+│   ├── 01_schema.sql
+│   ├── 02_data_validation.sql
+│   ├── 03_customer_metrics.sql
+│   ├── 04_business_questions.sql
+│   └── 05_validation.sql
+│
+├── powerbi/
+│   └── TrendOne_Customer_Analytics.pbix
+│
+├── docs/
+│   ├── business_case.md
+│   ├── business_questions.md
+│   ├── data_requirements.md
+│   ├── data_assessment.md
+│   ├── data_preparation.md
+│   ├── 06_findings.md
+│   ├── 07_recommendations.md
+│   ├── limitations.md
+│   │
+│   ├── architecture/
+│   │   ├── analytical_workflow.drawio
+│   │   ├── analytical_workflow.png
+│   │   ├── data_architecture.drawio
+│   │   ├── data_architecture.png
+│   │   ├── statistical_decision_flow.drawio
+│   │   └── statistical_decision_flow.png
+│   │
+│   ├── images/
+│   │   ├── trendone_banner.png
+│   │   ├── dashboard_overview.png
+│   │   ├── dashboard_customer_behavior.png
+│   │   └── dashboard_segmentation.png
+│   │
+│   └── report/
+│       ├── TrendOne_Customer_Analytics_Report.pdf
+│       └── TrendOne_Customer_Analytics_Report.docx
+│
+└── outputs/
+    ├── figures/
+    └── statistical_results/
 ```
+
+*This tree is a proposed structure. Update it to match the files actually committed to GitHub. If a file or folder does not exist, remove it from the README or create it before publishing.*
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python [EDIT: version]
+- Jupyter Notebook or JupyterLab
+- PostgreSQL or the SQL engine used in the project
+- Power BI Desktop
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone [EDIT: YOUR_GITHUB_REPOSITORY_URL]
+cd trendone_customer_analytics
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment:
+
+**Windows PowerShell**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Prepare the Dataset
+
+Place the source dataset in the appropriate raw-data directory and follow the instructions in the data assessment and preparation notebooks.
+
+[EDIT: Include the actual dataset download instructions and source URL.]
+
+### 5. Run the Analysis
+
+Open Jupyter Notebook and run the notebooks in sequence:
+
+1. `01_data_understanding.ipynb`
+2. `02_data_preparation.ipynb`
+3. `03_eda.ipynb`
+4. `04_statistical_analysis.ipynb`
+5. `05_customer_segmentation.ipynb`
+
+Execute the SQL scripts using the database setup and import instructions documented in the repository.
+
+### 6. Open the Dashboard
+
+Open `powerbi/TrendOne_Customer_Analytics.pbix` in Power BI Desktop and update the data source path if required.
+
+[EDIT: Add any required SQL connection, import, or cluster-output instructions.]
+
+---
+
+## 📚 Project Documentation
+
+| Resource | Description |
+|---|---|
+| [Business Case](docs/business_case.md) | Business context and project objectives |
+| [Business Questions](docs/business_questions.md) | Analytical questions and scope |
+| [Data Requirements](docs/data_requirements.md) | Data needed to answer the questions |
+| [Data Assessment](docs/data_assessment.md) | Data quality and feasibility assessment |
+| [Data Preparation](docs/data_preparation.md) | Cleaning decisions and preparation workflow |
+| [Findings](docs/06_findings.md) | Analytical results and interpretations |
+| [Recommendations](docs/07_recommendations.md) | Proposed follow-up actions |
+| [Limitations](docs/limitations.md) | Constraints and additional data requirements |
+| [PDF Report](docs/report/TrendOne_Customer_Analytics_Report.pdf) | Consolidated analytical report |
+
+[EDIT: Verify every link and filename before publishing.]
+
+---
+
+## 🔁 Reproducibility & Validation
+
+The project separates data preparation, analytical notebooks, SQL scripts, and dashboard reporting to make the workflow easier to inspect and reproduce.
+
+Validation includes:
+
+- Checking identifiers, missing values, and duplicate records.
+- Comparing relevant Python and SQL outputs.
+- Reporting statistical effect sizes alongside significance tests.
+- Recording the final K-Means configuration and evaluation metric.
+- Documenting data limitations and assumptions.
+
+Reproducibility depends on the availability of the source dataset, the documented environment, and the correct configuration of local data paths and database connections.
+
+### Dataset Attribution
+
+**Dataset name:** [EDIT: Exact dataset name]  
+**Source:** [EDIT: Original dataset URL]  
+**Publisher / author:** [EDIT: Dataset publisher]  
+**License:** [EDIT: Verified license and attribution requirements]
+
+The dataset source and license should be checked before redistributing raw or processed data in the repository.
+
+---
+
+## 👤 About This Project
+
+This project demonstrates practical application of data analytics techniques across data preparation, exploratory analysis, statistical testing, SQL, customer segmentation, and business intelligence reporting.
+
+The emphasis is on analytical reasoning, transparent interpretation, reproducible workflows, and clear communication of limitations—not simply producing charts or clustering outputs.
+
+### 🔗 Connect
+
+- **GitHub:** [EDIT: Your GitHub profile]
+- **Portfolio:** [EDIT: Your portfolio URL]
+- **LinkedIn:** [EDIT: Your LinkedIn URL]
+
+---
+
+<p align="center">
+  <i>Turning customer data into structured analysis, evidence-based interpretation, and better questions for business decision-making.</i>
+</p>
