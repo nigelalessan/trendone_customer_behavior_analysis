@@ -2,7 +2,7 @@
 ### Customer Behavior Analysis · Statistical Testing · Exploratory Segmentation
 
 <p align="center">
-  <img src="docs/images/trendone_banner.png" alt="TrendOne Customer Analytics banner" width="100%">
+  <img src="docs/img/trendone_banner.png" alt="TrendOne Customer Analytics banner" width="70%">
 </p>
 
 <p align="center">
@@ -153,7 +153,7 @@ Previous Purchases and Frequency of Purchases are treated as recorded behavioral
 The project follows a structured workflow, from business understanding to communication of findings.
 
 <p align="center">
-  <img src="docs/architecture/analytical_workflow.png" alt="TrendOne analytical workflow" width="100%">
+  <img src="docs/architecture/analytical_workflow.png" alt="TrendOne analytical workflow" width="40%">
 </p>
 
 ### Workflow Stages
@@ -172,7 +172,7 @@ The sequence represents the overall analytical workflow. Some activities, such a
 ### 🏗️ Data Architecture
 
 <p align="center">
-  <img src="docs/architecture/data_architecture.png" alt="TrendOne data architecture" width="100%">
+  <img src="docs/architecture/data_architecture.png" alt="TrendOne data architecture" width="40%">
 </p>
 
 The workflow starts with the raw dataset, produces a prepared dataset, and uses the prepared data for analysis and reporting. Python, SQL, and Power BI serve complementary roles in the project.
@@ -221,9 +221,10 @@ Prepared Dataset
 ```
 
 📄 **Related documentation:**
-- [Data Assessment](docs/data_assessment.md)
-- [Data Preparation](docs/data_preparation.md)
-- [Data Requirements](docs/data_requirements.md)
+- [Data Requirements](docs/03_data_requirements.md)
+- [Data Assessment](docs/04_data_assessment.md)
+- [Data Preparation](docs/05_data_preparation.md)
+
 
 ---
 
@@ -241,7 +242,7 @@ Statistical methods were selected based on the types of variables and the questi
 ### Statistical Decision Flow
 
 <p align="center">
-  <img src="docs/architecture/statistical_decision_flow.png" alt="Statistical test selection flowchart" width="85%">
+  <img src="docs/architecture/statistical_decision_flow.png" alt="Statistical test selection flowchart" width="40%">
 </p>
 
 ### Interpretation Principles
@@ -308,7 +309,13 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Executive Overview
 
 <p align="center">
-  <img src="docs/images/dashboard_overview.png" alt="Power BI executive overview dashboard" width="100%">
+  <img src="docs/images/Dashboard - Executive Overview 1-1.png" alt="Power BI executive overview dashboard" width="40%">
+</p>
+<p align="center">
+  <img src="docs/images/Dashboard - Executive Overview 1-2.png" alt="Power BI executive overview dashboard" width="40%">
+</p>
+<p align="center">
+  <img src="docs/images/Dashboard - Executive Overview 1-3.png" alt="Power BI executive overview dashboard" width="40%">
 </p>
 
 **What this page communicates:**
