@@ -586,8 +586,6 @@ Reproducibility depends on the availability of the source dataset, the documente
 **Source:** [Link](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv)  
 **Publisher / author:** amlanmohanty1  
 
-The dataset source and license should be checked before redistributing raw or processed data in the repository.
-
 ---
 
 ## 👤 About This Project
