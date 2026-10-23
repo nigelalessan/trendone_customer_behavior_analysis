@@ -51,19 +51,19 @@ Rather than treating every observed pattern as a business conclusion, the analys
 
 ### 🧰 Tools & Technologies
 
-| Tool | Application |
-|---|---|
-| Python | Data preparation, EDA, statistical analysis, clustering |
-| Pandas & NumPy | Data manipulation and numerical operations |
-| SciPy / Statistical libraries | Hypothesis testing and statistical calculations |
-| Scikit-learn | K-Means clustering and cluster evaluation |
-| SQL / PostgreSQL | Data validation, customer metrics, business queries |
-| Power BI | Interactive dashboard and business reporting |
-| Jupyter Notebook | Reproducible analytical workflow |
-| Git & GitHub | Version control and project documentation |
-| diagrams.net | Analytical workflow and architecture diagrams |
+| Tool                          | Application                                             |
+|-------------------------------|---------------------------------------------------------|
+| Python                        | Data preparation, EDA, statistical analysis, clustering |
+| Pandas & NumPy                | Data manipulation and numerical operations              |
+| SciPy / pingouin              | Hypothesis testing and statistical calculations         |
+| Scikit-learn                  | K-Means clustering and cluster evaluation               |
+| SQL / PostgreSQL              | Data validation, customer metrics, business queries     |
+| Power BI                      | Interactive dashboard and business reporting            |
+| Jupyter Notebook              | Reproducible analytical workflow                        |
+| GitHub                        | Project documentation                                   |
+| FigJam                        | Analytical workflow and architecture diagrams           |
 
-[EDIT: Confirm the exact Python libraries, SQL engine, and diagram tool used in the repository.]
+
 
 ---
 
@@ -144,7 +144,7 @@ Actual customer retention over time cannot be measured reliably because the data
 
 Previous Purchases and Frequency of Purchases are treated as recorded behavioral attributes, not substitutes for time-based retention metrics.
 
-📄 **Detailed documentation:** [EDIT: Link to `docs/business_questions.md`]
+📄 **Detailed documentation:** [`docs/02_business_questions.md`](docs/02_business_questions.md)
 
 ---
 
@@ -158,26 +158,24 @@ The project follows a structured workflow, from business understanding to commun
 
 ### Workflow Stages
 
-1. **Business Understanding** — Define the business context, analytical objectives, and key questions.
-2. **Data Assessment** — Review the dataset structure, data types, missing values, uniqueness, and analytical feasibility.
-3. **Data Preparation** — Prepare the data and derived variables for consistent analysis.
-4. **Exploratory Data Analysis** — Examine distributions, group patterns, and potential relationships.
-5. **Statistical Analysis** — Apply appropriate tests, evaluate effect sizes, and interpret results.
-6. **Customer Segmentation** — Develop exploratory profiles and assess cluster quality.
-7. **SQL Analysis & Validation** — Run structured queries and compare relevant outputs with Python.
-8. **Business Intelligence & Recommendations** — Present findings and limitations through Power BI and project documentation.
+1. **Business Understanding** - Define the business context, analytical objectives, and key questions.
+2. **Data Assessment** - Review the dataset structure, data types, missing values, uniqueness, and analytical feasibility.
+3. **Data Preparation** - Prepare the data and derived variables for consistent analysis.
+4. **Exploratory Data Analysis** - Examine distributions, group patterns, and potential relationships.
+5. **Statistical Analysis** - Apply appropriate tests, evaluate effect sizes, and interpret results.
+6. **Customer Segmentation** - Develop exploratory profiles and assess cluster quality.
+7. **SQL Analysis & Validation** - Run structured queries and compare relevant outputs with Python.
+8. **Business Intelligence & Recommendations** - Present findings and limitations through Power BI and project documentation.
 
 The sequence represents the overall analytical workflow. Some activities, such as SQL analysis and Python analysis, can be performed in parallel.
 
 ### 🏗️ Data Architecture
 
 <p align="center">
-  <img src="docs/architecture/data_architecture.png" alt="TrendOne data architecture" width="40%">
+  <img src="docs/architecture/data_architecture.png" alt="TrendOne data architecture" width="60%">
 </p>
 
 The workflow starts with the raw dataset, produces a prepared dataset, and uses the prepared data for analysis and reporting. Python, SQL, and Power BI serve complementary roles in the project.
-
-[EDIT: Ensure this diagram matches the actual data sources used by your Power BI file, including any separate cluster output or evaluation metrics.]
 
 ---
 
@@ -185,15 +183,15 @@ The workflow starts with the raw dataset, produces a prepared dataset, and uses 
 
 ### Dataset Summary
 
-| Attribute | Result |
-|---|---|
-| Rows | 3,900 |
-| Columns | 18 |
-| Unique Customer IDs | 3,900 |
-| Exact duplicate rows | None detected |
-| Missing Review Rating values | 37 |
-| Missing Review Rating percentage | Approximately 0.95% |
-| Data granularity | One record per customer identifier in the provided file |
+| Attribute                         | Result                                                  |
+|-----------------------------------|---------------------------------------------------------|
+| Rows                              | 3,900                                                   |
+| Columns                           | 18                                                      |
+| Unique Customer IDs               | 3,900                                                   |
+| Exact duplicate rows              | None detected                                           |
+| Missing Review Rating values      | 37                                                      |
+| Missing Review Rating percentage  | Approximately 0.95%                                     |
+| Data granularity                  | One record per customer identifier in the provided file |
 
 ### Data Quality Decisions
 
@@ -232,22 +230,22 @@ Prepared Dataset
 
 Statistical methods were selected based on the types of variables and the questions being investigated.
 
-| Analytical Scenario | Method | Purpose |
-|---|---|---|
-| Two numerical variables | Spearman correlation | Evaluate monotonic association |
-| Numerical outcome, two independent groups | Welch's t-test | Compare group means without assuming equal variances |
-| Numerical outcome, more than two groups | Welch's ANOVA | Compare group means without assuming equal variances |
-| Two categorical variables | Chi-square test of independence | Evaluate categorical association |
+| Analytical Scenario                       | Method                          | Purpose                                              |
+|-------------------------------------------|---------------------------------|------------------------------------------------------|
+| Two numerical variables                   | Spearman correlation            | Evaluate monotonic association                       |
+| Numerical outcome, two independent groups | Welch's t-test                  | Compare group means without assuming equal variances |
+| Numerical outcome, more than two groups   | Welch's ANOVA                   | Compare group means without assuming equal variances | 
+| Two categorical variables                 | Chi-square test of independence | Evaluate categorical association                     |
 
 ### Statistical Decision Flow
 
 <p align="center">
-  <img src="docs/architecture/statistical_decision_flow.png" alt="Statistical test selection flowchart" width="40%">
+  <img src="docs/architecture/statistical_decision_flow.png" alt="Statistical test selection flowchart" width="60%">
 </p>
 
 ### Interpretation Principles
 
-- Significance threshold: \(\alpha = 0.05\).
+- Significance threshold: $\alpha = 0.05$. 
 - Effect sizes are considered alongside p-values.
 - Statistical significance is not equivalent to business importance.
 - Association does not establish causality.
@@ -262,27 +260,27 @@ Statistical methods were selected based on the types of variables and the questi
 
 ### Model Configuration
 
-| Parameter | Value |
-|---|---|
-| Algorithm | K-Means |
-| Number of clusters | 6 |
-| Random state | 42 |
-| Number of initializations | 20 |
-| Silhouette score | 0.2864 |
+| Parameter                 | Value   |
+|---------------------------|---------|
+| Algorithm                 | K-Means |
+| Number of clusters        | 6       |
+| Random state              | 42      |
+| Number of initializations | 20      |
+| Silhouette score          | 0.2864  |
 
 The clusters are exploratory profiles derived from selected numerical features. They should not be interpreted as validated measures of customer loyalty, profitability, or retention.
 
 ### Cluster Profile Summary
 
 | Cluster | Customers | Avg. Purchase Amount | Avg. Previous Purchases | Avg. Review Rating |
-|---|---:|---:|---:|---:|
-| C0 | 647 | $76.00 | 12.11 | 4.34 |
-| C1 | 673 | $45.99 | 38.88 | 3.15 |
-| C2 | 665 | $39.48 | 11.90 | 3.31 |
-| C3 | 646 | $80.33 | 39.76 | 4.22 |
-| C4 | 625 | $82.77 | 20.78 | 3.06 |
-| C5 | 644 | $35.84 | 28.39 | 4.43 |
-
+|---------|----------:|---------------------:|------------------------:|-------------------:|
+| C0      | 647       | $76.00               | 12.11                   | 4.34               |
+| C1      | 673       | $45.99               | 38.88                   | 3.15               |
+| C2      | 665       | $39.48               | 11.90                   | 3.31               |
+| C3      | 646       | $80.33               | 39.76                   | 4.22               |
+| C4      | 625       | $82.77               | 20.78                   | 3.06               |
+| C5      | 644       | $35.84               | 28.39                   | 4.43               | 
+ 
 ### Initial Observations
 
 - **C3:** Higher average purchase amount and the highest average previous purchase count among the six clusters.
@@ -298,7 +296,7 @@ The silhouette score of 0.2864 indicates limited cluster separation. A separate 
 
 Further validation should examine alternative feature sets, scaling choices, cluster counts, stability, interpretability, and relevance to measurable business outcomes.
 
-📓 **Notebook:** [EDIT: Link to `notebooks/05_customer_segmentation.ipynb`]
+📓 **Notebook:** [`notebooks/05_customer_segmentation.ipynb`](notebooks/05_customer_segmentation.ipynb)
 
 ---
 
@@ -309,13 +307,13 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Executive Overview
 
 <p align="center">
-  <img src="docs/images/Dashboard - Executive Overview 1-1.png" alt="Power BI executive overview dashboard" width="40%">
+  <img src="docs/img/dashboard_executive_overview_1_1.png" alt="Power BI executive overview dashboard" width="40%">
 </p>
 <p align="center">
-  <img src="docs/images/Dashboard - Executive Overview 1-2.png" alt="Power BI executive overview dashboard" width="40%">
+  <img src="docs/img/dashboard_executive_overview_1_2.png" alt="Power BI executive overview dashboard" width="40%">
 </p>
 <p align="center">
-  <img src="docs/images/Dashboard - Executive Overview 1-3.png" alt="Power BI executive overview dashboard" width="40%">
+  <img src="docs/img/dashboard_executive_overview_1_3.png" alt="Power BI executive overview dashboard" width="40%">
 </p>
 
 **What this page communicates:**
@@ -327,7 +325,7 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Customer Behavior
 
 <p align="center">
-  <img src="docs/images/dashboard_customer_behavior.png" alt="Power BI customer behavior dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_behavior_2.png" alt="Power BI customer behavior dashboard" width="100%">
 </p>
 
 **What this page communicates:**
@@ -338,7 +336,16 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 ### Customer Segmentation
 
 <p align="center">
-  <img src="docs/images/dashboard_segmentation.png" alt="Power BI customer segmentation dashboard" width="100%">
+  <img src="docs/img/dashboard_customer_segmentation_3_1.png" alt="Power BI customer segmentation dashboard" width="100%">
+</p>
+<p align="center">
+  <img src="docs/img/dashboard_customer_segmentation_3_2.png" alt="Power BI customer segmentation dashboard" width="100%">
+</p>
+<p align="center">
+  <img src="docs/img/dashboard_customer_segmentation_3_3.png" alt="Power BI customer segmentation dashboard" width="100%">
+</p>
+<p align="center">
+  <img src="docs/img/dashboard_customer_segmentation_3_4.png" alt="Power BI customer segmentation dashboard" width="100%">
 </p>
 
 **What this page communicates:**
@@ -349,7 +356,7 @@ The Power BI dashboard translates the analytical outputs into a business-facing 
 
 > **Dashboard note:** The recorded Purchase Amount should not be interpreted as total historical customer spending, revenue, or customer lifetime value without evidence that the dataset supports those definitions.
 
-🔗 **Interactive dashboard:** [EDIT: Insert Power BI link if publicly accessible]
+🔗 **Dashboard:** [Dashboard](powerbi/trendOne_analytics_dashboard.pbix)
 
 ---
 
@@ -373,7 +380,7 @@ Prioritize transaction timestamps, stable customer identifiers, product-level sa
 
 These additions would enable more reliable retention analysis, cohort analysis, customer value measurement, and campaign evaluation.
 
-📄 **Detailed recommendations:** [EDIT: Link to `docs/07_recommendations.md`]
+📄 **Detailed recommendations:** [`docs/07_recommendations.md`](docs/07_recommendations.md)
 
 ---
 
@@ -390,17 +397,17 @@ The findings should be interpreted within the scope of the available dataset.
 
 ### Additional Data That Would Improve the Analysis
 
-| Data Requirement | Analytical Value |
-|---|---|
-| Transaction ID and timestamp | Cohort analysis, retention, purchase intervals |
-| Stable customer ID across transactions | Customer purchase history |
-| Quantity, price, discount, net sales | Purchase value and promotion analysis |
-| Product cost and margin | Profitability analysis |
-| Promotion and eligibility identifiers | Discount effectiveness investigation |
-| Acquisition and activity history | Customer lifecycle analysis |
-| Campaign exposure and response | Campaign evaluation |
+| Data Requirement                        | Analytical Value                               |
+|-----------------------------------------|------------------------------------------------|
+| Transaction ID and timestamp            | Cohort analysis, retention, purchase intervals |
+| Stable customer ID across transactions  | Customer purchase history                      |
+| Quantity, price, discount, net sales    | Purchase value and promotion analysis          |
+| Product cost and margin                 | Profitability analysis                         |
+| Promotion and eligibility identifiers   | Discount effectiveness investigation           |
+| Acquisition and activity history        | Customer lifecycle analysis                    |
+| Campaign exposure and response          | Campaign evaluation                            |
 
-📄 **Full limitations:** [EDIT: Link to `docs/limitations.md`]
+📄 **Full limitations:** [`docs/08_limitations.md`](docs/08_limitations.md)
 
 ---
 
@@ -436,36 +443,38 @@ trendone_customer_analytics/
 │   └── TrendOne_Customer_Analytics.pbix
 │
 ├── docs/
-│   ├── business_case.md
-│   ├── business_questions.md
-│   ├── data_requirements.md
-│   ├── data_assessment.md
-│   ├── data_preparation.md
+│   ├── 01_business_case.md
+│   ├── 02_business_questions.md
+│   ├── 03_data_requirements.md
+│   ├── 04_data_assessment.md
+│   ├── 05_data_preparation.md
 │   ├── 06_findings.md
 │   ├── 07_recommendations.md
-│   ├── limitations.md
+│   ├── 08_limitations.md
 │   │
 │   ├── architecture/
-│   │   ├── analytical_workflow.drawio
 │   │   ├── analytical_workflow.png
-│   │   ├── data_architecture.drawio
 │   │   ├── data_architecture.png
-│   │   ├── statistical_decision_flow.drawio
 │   │   └── statistical_decision_flow.png
 │   │
-│   ├── images/
+│   ├── img/
 │   │   ├── trendone_banner.png
-│   │   ├── dashboard_overview.png
-│   │   ├── dashboard_customer_behavior.png
-│   │   └── dashboard_segmentation.png
+│   │   ├── dashboard _executive_overview_1_1.png
+│   │   ├── dashboard _executive_overview_1_2.png
+│   │   ├── dashboard _executive_overview_1_3.png
+│   │   ├── dashboard _customer_behavior_2.png
+│   │   ├── dashboard _customer_segmentation_3_1.png
+│   │   ├── dashboard _customer_segmentation_3_2.png
+│   │   ├── dashboard _customer_segmentation_3_3.png
+│   │   └── dashboard _customer_segmentation_3_4.png
 │   │
 │   └── report/
 │       ├── TrendOne_Customer_Analytics_Report.pdf
-│       └── TrendOne_Customer_Analytics_Report.docx
+│       └── TrendOne_Customer_Analytics_Slide.pdf
 │
 └── outputs/
-    ├── figures/
-    └── statistical_results/
+    ├── clustering_metrics.csv
+    └── customer_segments.csv
 ```
 
 *This tree is a proposed structure. Update it to match the files actually committed to GitHub. If a file or folder does not exist, remove it from the README or create it before publishing.*
@@ -476,7 +485,7 @@ trendone_customer_analytics/
 
 ### Prerequisites
 
-- Python [EDIT: version]
+- Python 3.12
 - Jupyter Notebook or JupyterLab
 - PostgreSQL or the SQL engine used in the project
 - Power BI Desktop
@@ -519,7 +528,7 @@ pip install -r requirements.txt
 
 Place the source dataset in the appropriate raw-data directory and follow the instructions in the data assessment and preparation notebooks.
 
-[EDIT: Include the actual dataset download instructions and source URL.]
+[Dataset](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv)
 
 ### 5. Run the Analysis
 
@@ -537,25 +546,23 @@ Execute the SQL scripts using the database setup and import instructions documen
 
 Open `powerbi/TrendOne_Customer_Analytics.pbix` in Power BI Desktop and update the data source path if required.
 
-[EDIT: Add any required SQL connection, import, or cluster-output instructions.]
 
 ---
 
 ## 📚 Project Documentation
 
-| Resource | Description |
-|---|---|
-| [Business Case](docs/business_case.md) | Business context and project objectives |
-| [Business Questions](docs/business_questions.md) | Analytical questions and scope |
-| [Data Requirements](docs/data_requirements.md) | Data needed to answer the questions |
-| [Data Assessment](docs/data_assessment.md) | Data quality and feasibility assessment |
-| [Data Preparation](docs/data_preparation.md) | Cleaning decisions and preparation workflow |
-| [Findings](docs/06_findings.md) | Analytical results and interpretations |
-| [Recommendations](docs/07_recommendations.md) | Proposed follow-up actions |
-| [Limitations](docs/limitations.md) | Constraints and additional data requirements |
-| [PDF Report](docs/report/TrendOne_Customer_Analytics_Report.pdf) | Consolidated analytical report |
+| Resource                                                            | Description                                  |
+|---------------------------------------------------------------------|----------------------------------------------|
+| [Business Case](docs/01_business_case.md)                           | Business context and project objectives      |
+| [Business Questions](docs/02_business_questions.md)                 | Analytical questions and scope               |
+| [Data Requirements](docs/03_data_requirements.md)                   | Data needed to answer the questions          |
+| [Data Assessment](docs/04_data_assessment.md)                       | Data quality and feasibility assessment      |
+| [Data Preparation](docs/05_data_preparation.md)                     | Cleaning decisions and preparation workflow  |
+| [Findings](docs/06_findings.md)                                     | Analytical results and interpretations       |
+| [Recommendations](docs/07_recommendations.md)                       | Proposed follow-up actions                   |
+| [Limitations](docs/08_limitations.md)                               | Constraints and additional data requirements |
+| [PDF Report](docs/report/TrendOne_Customer_Analytics_Report.pdf)    | Consolidated analytical report               |
 
-[EDIT: Verify every link and filename before publishing.]
 
 ---
 
@@ -575,10 +582,9 @@ Reproducibility depends on the availability of the source dataset, the documente
 
 ### Dataset Attribution
 
-**Dataset name:** [EDIT: Exact dataset name]  
-**Source:** [EDIT: Original dataset URL]  
-**Publisher / author:** [EDIT: Dataset publisher]  
-**License:** [EDIT: Verified license and attribution requirements]
+**Dataset name:** Customer Shopping Behavior  
+**Source:** [Link](https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv)  
+**Publisher / author:** amlanmohanty1  
 
 The dataset source and license should be checked before redistributing raw or processed data in the repository.
 
@@ -588,13 +594,12 @@ The dataset source and license should be checked before redistributing raw or pr
 
 This project demonstrates practical application of data analytics techniques across data preparation, exploratory analysis, statistical testing, SQL, customer segmentation, and business intelligence reporting.
 
-The emphasis is on analytical reasoning, transparent interpretation, reproducible workflows, and clear communication of limitations—not simply producing charts or clustering outputs.
+The emphasis is on analytical reasoning, transparent interpretation, reproducible workflows, and clear communication of limitations not simply producing charts or clustering outputs.
 
 ### 🔗 Connect
 
-- **GitHub:** [EDIT: Your GitHub profile]
-- **Portfolio:** [EDIT: Your portfolio URL]
-- **LinkedIn:** [EDIT: Your LinkedIn URL]
+- **GitHub:** [nigelalessan](https://github.com/nigelalessan)
+- **LinkedIn:** [Nigel Alessandro](https://www.linkedin.com/in/nigelalessan)
 
 ---
 
