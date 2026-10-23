@@ -252,7 +252,6 @@ Statistical methods were selected based on the types of variables and the questi
 - Non-significant results do not prove that no relationship exists.
 - The validity of the tests depends on the assumptions and structure of the available data.
 
-[EDIT: Link the diagram path to the actual image committed in your repository.]
 
 ---
 
