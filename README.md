@@ -559,7 +559,7 @@ Open `powerbi/TrendOne_Customer_Analytics.pbix` in Power BI Desktop and update t
 | [Findings](docs/06_findings.md)                                     | Analytical results and interpretations       |
 | [Recommendations](docs/07_recommendations.md)                       | Proposed follow-up actions                   |
 | [Limitations](docs/08_limitations.md)                               | Constraints and additional data requirements |
-| [PDF Report](docs/reports/trendOne_customer_analytics_report.pdf)   | Consolidated analytical report               |
+| [PDF Report](docs/reports/trendone_customer_analytics_report.pdf)   | Consolidated analytical report               |
 
 
 ---
