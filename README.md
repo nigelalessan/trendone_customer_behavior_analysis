@@ -21,7 +21,6 @@
   <a href="#-project-overview">Overview</a> •
   <a href="#-key-findings">Key Findings</a> •
   <a href="#-dashboard-preview">Dashboard</a> •
-  <a href="#-methodology">Methodology</a> •
   <a href="#-repository-structure">Repository</a>
 </p>
 
