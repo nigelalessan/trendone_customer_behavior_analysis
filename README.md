@@ -493,7 +493,7 @@ trendone_customer_analytics/
 
 ```bash
 git clone https://github.com/nigelalessan/trendone_customer_behavior_analysis
-cd trendone_customer_analytics
+cd trendone_customer_behavior_analysis
 ```
 
 ### 2. Create a Virtual Environment
