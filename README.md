@@ -1,4 +1,4 @@
-# 🛍️ TrendOne Customer Analytics
+# 🛍️ PROJECT: TrendOne Customer Analytics
 ### Customer Behavior Analysis · Statistical Testing · Exploratory Segmentation
 
 <p align="center">
